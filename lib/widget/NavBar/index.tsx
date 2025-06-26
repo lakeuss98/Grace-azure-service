@@ -3,8 +3,17 @@ import { Menu } from "lucide-react";
 import Image from "next/image"
 import Link from "next/link";
 import React from "react";
-export default function  NavBar(){
+import { usePathname } from "next/navigation";
 
+export default function  NavBar(){
+const pathname = usePathname()
+const menus = [
+    { title:'Acceuil',path:'/' },
+    { title:'A prorpos',path:'/a-propos' },
+    { title:'Nos services',path:'/services' },
+    { title:'Tarifs',path:'/tarifs' },
+    { title:'devis',path:'/devis' },
+]
 return(
 <header className="flex flex-col w-full  items-center">
     <div className="hidden lg:flex justify-end w-full">
@@ -14,12 +23,9 @@ return(
         
         <Link className="flex" href={"/"}> <Image className="h-[50px] w-[50px] lg:h-[80px] lg:w-[80px]"   src={"/icon/logo.png"} width={80} height={80} alt={"logo Grace azure Service"}  /> </Link>
         <ul className="hidden lg:flex gap-6 items-center justify-between">
-            <li><Link href={'/'}>Acceuil</Link></li>
-            <li><Link href={'/services'}>Nos services</Link></li>
-            <li><Link href={'/devis'}>Devis</Link></li>
-            <li><Link href={'/a-propos'}>A propos de nous </Link></li>
-            <li><Link href={'/contqct'}>Nous contacter </Link></li>
-            <li> <Link href={'/tarif'}>Nos tarifs </Link></li>
+            {menus.map(
+                (menu,i) =>   <li key={i+menu.path} ><Link href={menu.path.toString()} className={pathname === `${menu.path}` ? 'underline underline-offset-4 font-semibold' : ''}>{menu.title}</Link></li>
+                 )}
         </ul>
         <Menu className="lg:hidden" />
        

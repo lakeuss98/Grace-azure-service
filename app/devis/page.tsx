@@ -11,6 +11,7 @@ export type FormDataType = {
 }
 
 export default function Devis() {
+    
     const [formData, setFormData] = useState<FormDataType>({nom: "", email: "", telephone: "", adresse: "", service: "", message: ""});
     return (
         <section className="flex flex-col w-full min-h-screen bg-[#eadeda] items-center justify-center px-4 py-10">
@@ -32,7 +33,7 @@ export default function Devis() {
                     <option value="complementaire">Services complémentaires</option>
                 </select>
                 <textarea name="message" placeholder="Votre message ou demande particulière" rows={4} className="border border-[#DCA797] rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#DCA797]" />
-                <button type="submit" className="bg-[#4B2E05] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#7c4a0a] transition">Envoyer la demande</button>
+                <button type="submit" className="bg-[#4B2E05] text-white     px-6 py-3 rounded-lg font-semibold hover:bg-[#7c4a0a] transition">Envoyer la demande</button>
             </form>
         </section>
     );

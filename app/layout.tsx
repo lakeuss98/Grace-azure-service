@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from  '@/lib/widget/NavBar';
+import Footer from "@/lib/widget/Footer.tsx/Footer";
 // import Footer from  '@/lib/widget/Footer';
 
 export const metadata: Metadata = {
@@ -16,13 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-  
       <body 
       className={` bg-white`}
       >
       <NavBar />
+     
         {children}
-      {/* <Footer/> */}
+      <Footer/>
       </body>
      
     </html>

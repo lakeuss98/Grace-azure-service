@@ -26,17 +26,17 @@ export default function Services() {
                 Grace Azure Services vous propose des prestations professionnelles et personnalisées pour particuliers et propriétaires de locations saisonnières. Découvrez nos offres principales ci-dessous.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
-                <div className="bg-[#CCE2CB] rounded-lg shadow-md p-6 flex flex-col items-center">
+                <div className="bg-[#FCD5CE] rounded-lg shadow-md p-6 flex flex-col items-center">
                     <span className="text-3xl mb-4">🏠</span>
                     <h2 className="text-xl font-semibold mb-2 text-[#4B2E05] text-center">Conciergerie Airbnb</h2>
                     <p className="text-center text-[#4B2E05]"> Nettoyage de votre location courte durée , gestion du linge et mise à disposition des produits de première nécessité.  </p>
                 </div>
-                <div className="bg-[#CCE2CB] rounded-lg shadow-md p-6 flex flex-col items-center">
+                <div className="bg-[#FCD5CE] rounded-lg shadow-md p-6 flex flex-col items-center">
                     <span className="text-3xl mb-4">🧹</span>
                     <h2 className="text-xl font-semibold mb-2 text-[#4B2E05] text-center">Nettoyage d&apos;appartement</h2>
                     <p className="text-center text-[#4B2E05]">Entretien régulier ou ponctuel de votre appartement : sols, poussière, sanitaires, cuisine, vitres, et espaces communs. Adapté à vos besoins et à votre rythme.</p>
                 </div>
-                <div className="bg-[#CCE2CB] rounded-lg shadow-md p-6 flex flex-col items-center">
+                <div className="bg-[#FCD5CE] rounded-lg shadow-md p-6 flex flex-col items-center">
                     <span className="text-3xl mb-4">🏡</span>
                     <h2 className="text-xl font-semibold mb-2 text-[#4B2E05] text-center">Nettoyage de domicile</h2>
                     <p className="text-center text-[#4B2E05]">Service de ménage à domicile pour maisons et villas : nettoyage complet, repassage, lavage de vitres, entretien des pièces de vie et chambres.</p>

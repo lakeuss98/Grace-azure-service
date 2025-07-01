@@ -33,7 +33,7 @@ export default function Devis() {
                     <option value="complementaire">Services complémentaires</option>
                 </select>
                 <textarea name="message" placeholder="Votre message ou demande particulière" rows={4} className="border border-[#DCA797] rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#DCA797]" />
-                <button type="submit" className="bg-[#4B2E05] text-white     px-6 py-3 rounded-lg font-semibold hover:bg-[#7c4a0a] transition">Envoyer la demande</button>
+                <button type="submit" className="bg-[#4B2E05] text-white     px-6 py-3 rounded-lg font-semibold hover:bg-[#DCA797] hover:text-[#4B2E05] transition">Envoyer la demande</button>
             </form>
         </section>
     );

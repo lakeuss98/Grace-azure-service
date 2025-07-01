@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from  '@/lib/widget/NavBar';
 import Footer from "@/lib/widget/Footer.tsx/Footer";
-// import Footer from  '@/lib/widget/Footer';
+//import Footer from "@/lib/widget/Footer.tsx/Footer";
+
 
 export const metadata: Metadata = {
   title: "Grace Azure Service",
@@ -18,10 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body 
-      className={` bg-white`}
+      className="bg-white scroll-hidden "
       >
       <NavBar />
-     
         {children}
       <Footer/>
       </body>

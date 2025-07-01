@@ -8,10 +8,10 @@ export default function Home() {
            <div className="text-[20px] sm:text-[30px] text-[#4B2E05] font-semibold">
              Grâce azur  services  votre partenaire pour un intérieur lumineux 
           </div>
-           <div className="mt-10 bg-[#fff]">
+           <div className="mt-10 rounded-lg  ">
                 <a
                     href="/devis"
-                    className="bg-[#5fa37a] text-white px-6 py-3 w-full flex flex-row rounded-lg font-semibold hover:bg-[#7c4a0a] transition"
+                    className="bg-[#5fa37a] text-white px-6 py-3 w-full flex flex-row rounded-lg font-semibold hover:bg-[#FCD5CE] hover:text-[#4B2E05] transition"
                 >
                     Demander un devis gratuit
                 </a>

@@ -42,10 +42,10 @@ export default function Services() {
                     <p className="text-center text-[#4B2E05]">Service de ménage à domicile pour maisons et villas : nettoyage complet, repassage, lavage de vitres, entretien des pièces de vie et chambres.</p>
                 </div>
             </div>
-            <div className="mt-10 bg-[#fff]">
+            <div className="mt-10">
                 <a
                     href="/devis"
-                    className="bg-[#5fa37a] text-white px-6 py-3 w-full flex flex-row rounded-lg font-semibold hover:bg-[#7c4a0a] transition"
+                    className="bg-[#5fa37a] text-white px-6 py-3 w-full flex flex-row rounded-lg font-semibold hover:bg-[#FCD5CE] hover:text-[#4B2E05] transition"
                 >
                     Demander un devis gratuit
                 </a>

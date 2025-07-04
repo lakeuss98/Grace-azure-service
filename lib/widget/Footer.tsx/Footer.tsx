@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-black text-white  py-10 px-4">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pt-7">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 pt-7">
         {/* Colonne 1 : Logo, slogan, politiques */}
         <div className="flex flex-col items-start">
           <Image
@@ -24,8 +24,8 @@ export default function Footer() {
 
         {/* Colonne 2 : Notre société */}
         <div>
-          <h3 className="font-semibold text-xl mb-4">Notre société</h3>
-          <ul className="space-y-2  ">
+          <h2 className="font-semibold text-2xl mb-8">Notre société</h2>
+          <ul className="space-y-4  ">
             <li>
               <a href="/qui-sommes-nous" className="hover:underline">Qui sommes-nous</a>
             </li>
@@ -46,8 +46,8 @@ export default function Footer() {
 
         {/* Colonne 3 : Contact */}
         <div>
-          <h3 className="font-semibold mb-4">Contactez-nous</h3>
-          <ul className="space-y-2 text-sm">
+          <h2 className="font-semibold text-2xl mb-4">Contactez-nous</h2>
+          <ul className="space-y-4 text-sm">
             <li>
               <a href="/contact" className="hover:underline">Contact</a>
             </li>
@@ -62,6 +62,27 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+
+        {/* Colonne 4 : localisation */}
+        <div>
+          <h2 className="font-semibold text-2xl mb-4">Contactez-nous</h2>
+          <ul className="space-y-4 text-sm">
+            <li>
+              <a href="/contact" className="hover:underline">Contact</a>
+            </li>
+            <li>
+              <span>Horaires : Lun-Ven 9h-18h</span>
+            </li>
+            <li>
+              <span>Tél : 01 23 45 67 89</span>
+            </li>
+            <li>
+              <span>Email : contact@votresite.com</span>
+            </li>
+          </ul>
+        </div>
+
+
       </div>
       <div className="mt-8 text-center text-xs text-gray-400">
         © {new Date().getFullYear()} Votre Société. Tous droits réservés.

@@ -1,9 +1,7 @@
-//"use client";
-
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services de ménage à domicile et conciergerie Airbnb | Grace Azure Services",
+  title: "Services de ménage à domicile et conciergerie Airbnb | Grace Azur Services",
   description: "Découvrez nos services : conciergerie Airbnb, nettoyage d'appartement, nettoyage de domicile. Service professionnel, fiable et adapté à vos besoins à domicile ou en location courte durée.",
   keywords: [
     "conciergerie Airbnb",

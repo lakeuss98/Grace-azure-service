@@ -5,12 +5,24 @@ import Footer from "@/lib/widget/Footer.tsx/Footer";
 //import Footer from "@/lib/widget/Footer.tsx/Footer";
 
 
-export const metadata: Metadata = {
-  title: "Grace Azure Service",
-  description: "Service de netoyage de bureaux et de domicile airbnb",
-  icons:'/icon/logo.png',
-};
 
+
+export const metadata: Metadata = {
+        title: "Grace Azur Service",
+    description: "Découvrez nos services : conciergerie Airbnb, nettoyage d'appartement, nettoyage de domicile. Service professionnel, fiable et adapté à vos besoins à domicile ou en location courte durée.",
+    keywords: [
+        "conciergerie Airbnb",
+        "nettoyage appartement",
+        "nettoyage domicile",
+        "ménage à domicile",
+        "service de ménage",
+        "entretien maison",
+        "nettoyage professionnel",
+        "location courte durée",
+        "Grace Azure Services"
+    ],
+    icons:'/icon/logo.png',
+};
 export default function RootLayout({
   children,
 }: Readonly<{

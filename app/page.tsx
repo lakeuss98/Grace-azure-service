@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-
+import Image from "next/image";
 export const metadata: Metadata = {
     title: "Services de ménage à domicile et conciergerie Airbnb | Grace Azur Services",
     description:
@@ -20,7 +20,13 @@ export const metadata: Metadata = {
 export default function Home() {
     return (
         <div>
-            <div className="flex flex-col items-center bg-[url('/img/bg-grace-mob.png')]  lg:bg-[url('/img/bg-web.png')] bg-cover bg-center w-full grid grid-rows-[20px_1fr_20px] justify-items-center min-h-screen pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+            <div className="flex flex-col pt-[100px]  h-[90vh] items-center bg-[url('/img/bg-home-mob.png')]  lg:bg-[url('/img/bg-home.png')] bg-cover bg-center w-full font-[family-name:var(--font-geist-sans)]">
+            <Image className=" lg:w-[380px] lg:h-[380px] " src="/img/img-grace.png" alt="bg-home" width={380} height={380} />
+           <div className="flex text-2xl font-bold ">
+           Votre partenaire pour un intérieur lumineux!
+           </div>
+                {/* <div className="flex flex-col justify-start py-[100px] bg-amber-300 items-center ">
+                </div> */}
 
             </div>
 
@@ -67,6 +73,7 @@ export default function Home() {
                         <iframe
                             className="w-full h-full"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.694127354258!2d11.512678674963685!3d3.8480329961057346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf0a60a30b8f%3A0x50b2e4b5ddfbe79c!2sYaound%C3%A9!5e0!3m2!1sfr!2scm!4v1719930484894"
+                           //src="https://maps.app.goo.gl/2hJ9t3qhKyAYGvsu7"
                             style={{ border: 0 }}
                             allowFullScreen
                             loading="lazy"

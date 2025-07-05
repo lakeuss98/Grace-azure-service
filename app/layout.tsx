@@ -31,13 +31,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body 
-      className="bg-white scroll-hidden "
+      className="flex flex-col h-screen "
       >
       <NavBar />
-        {children}
+      <div className="flex flex-col overflow-y-scroll    flex-grow ">
+      {children}
       <Footer/>
+      </div>
+     
       </body>
      
     </html>
   );
-}
+} 

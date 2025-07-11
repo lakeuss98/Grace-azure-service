@@ -4,8 +4,14 @@ import NavBar from  '@/lib/widget/NavBar';
 import Footer from "@/lib/widget/Footer.tsx/Footer";
 //import Footer from "@/lib/widget/Footer.tsx/Footer";
 
+// import { Dancing_Script } from 'next/font/google'
 
-
+// const dancingScript = Dancing_Script({
+//   subsets: ['latin'],
+//   weight: ['400', '700'], // selon tes besoins
+//   variable: '--font-dancing',
+//   display: 'swap',
+// })
 
 export const metadata: Metadata = {
         title: "Grace Azur Service",
@@ -31,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body 
-      className="flex flex-col h-screen "
+      className="flex flex-col h-screen bg-[#F49595]/5 "
       >
       <NavBar />
       <div className="flex flex-col overflow-y-scroll    flex-grow ">

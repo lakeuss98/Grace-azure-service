@@ -10,23 +10,28 @@ export default function  NavBar(){
 const pathname = usePathname()
 
 return(
-<header className="flex flex-col w-full  items-center">
-    <div className="flex bg-white justify-end w-full">
+<header className="flex flex-col w-full  items-center  ">
+    <div className="flex bg-transparent justify-end w-full">
         <span className="bg-[#F49595] pl-[20px]   text-[25px]  py-2 pr-[70px] ">6 98 25 14 33</span>
     </div>
-    <nav className="flex bg-[#F49595] px-[20px] py-3 lg:py-4   lg:px-[65px] w-full items-center justify-between">
-        
-        <Link className="flex" href={"/"}> <Image className=" h-[60px] w-[189px] lg:h-[70px] lg:w-[184px]"   src={"/icon/logo-nav.png"} width={200} height={80} alt={"logo Grace azure Service"}  /> </Link>
+    {/* lg:px-[65px] */}
+    <nav className="flex md:px-[15%] bg-[#F49595] px-[20px] py-3 lg:py-4  flex-row   w-full items-center justify-between">
+        <Link className="flex" href={"/"}> <Image className=" h-[59px] w-[156px] lg:h-[70px] lg:w-[184px]"   src={"/icon/logo-nav.png"} width={150} height={60} alt={"logo Grace azure Service"}  /> </Link>
         <ul className="hidden lg:flex  items-center text-[20px] justify-between">
+
             {menus.map(
-                (menu,i) =>   <li key={i+menu.path} ><Link href={menu.path.toString()} className={pathname === `${menu.path}` ? 'underline underline-offset-4 font-semibold  p-6 ' : '' +'hover:border-none hover:bg-gray-100 p-6 ' }>{menu.title}</Link></li>
+                (menu,i) =>   <li key={i+menu.path} ><Link href={menu.path.toString()} className={pathname === `${menu.path}` ? 'underline underline-offset-4 font-semibold  text-white p-6 ' : '' +'hover:border-none text-black hover:bg-gray-100 p-6 ' }>{menu.title}</Link></li>
                  )}
+                         <Link href={'/devis'} className=" flex border-[2px] border-black bg-[#2e6417] text-white px-4 py-2 rounded-lg">Devis</Link>
+
         </ul>
-        <MenuPhone/>
+        <div className="flex items-center space-x-2 lg:hidden">
        
-       
+
+        <Link href={'/devis'}  className=" flex border-[2px] border-black bg-[#2e6417] text-white h-[43px]  justify-center items-center font-bold text-base px-5 rounded-lg">Devis</Link>
+        <MenuPhone />
+        </div>
     </nav>
-   
 </header>);
 
 }

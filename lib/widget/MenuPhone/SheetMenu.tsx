@@ -22,7 +22,7 @@ export function MenuPhone() {
   return (
     <Sheet defaultOpen={false} open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger asChild>
-         <Menu className="lg:hidden" />
+         <Menu size={50} className="lg:hidden" />
         {/* <Button variant="outline">Open</Button> */}
       </SheetTrigger>
       <SheetContent side="right" className="w-3/4">

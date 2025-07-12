@@ -22,7 +22,7 @@ return(
             {menus.map(
                 (menu,i) =>   <li key={i+menu.path} ><Link href={menu.path.toString()} className={pathname === `${menu.path}` ? 'underline underline-offset-4 font-semibold  text-white p-6 ' : '' +'hover:border-none text-black hover:bg-gray-100 p-6 ' }>{menu.title}</Link></li>
                  )}
-                         <Link href={'/devis'} className=" flex border-[2px] border-black bg-[#2e6417] text-white px-4 py-2 rounded-lg">Devis</Link>
+                         <Link href={'/devis'} className=" flex border-[2px] border-black bg-[#2e6417] text-white px-4 py-2 rounded-lg">Mon dévis</Link>
 
         </ul>
         <div className="flex items-center space-x-2 lg:hidden">

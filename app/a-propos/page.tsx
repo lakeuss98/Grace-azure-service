@@ -6,8 +6,8 @@ export default function PageApropos() {
 
     return (<>
         <section title="à propos" className="flex text-base md:text-xl gap-y-6 py-5 flex-col w-full flex-grow px-[5%] md:px-[15%] " >
-            <div className="flex flex-col gap-y-4 w-full ">
-                <h1 className="font-bold text-2xl md:text-3xl text-[#DCA797] " >Qui sommes nous </h1>
+            <div title="Qui sommes nous" id="qui-sommes-nous" className="flex flex-col gap-y-4 w-full ">
+                <h1 className="font-bold text-center text-2xl md:text-3xl text-[#DCA797] " >Qui sommes nous </h1>
                 <p title="qui sommes nous" className="text-justify" >
                     Derrière Grace azur services, il y a moi, carine, une maman femme engagée et déterminée, et surtout une personne qui croit profondément en la force du travail bien fait.
                     J’ai créé ce service avec le cœur, inspirée par ma fille, Grace dont le prénom est devenu le symbole de ce projet. Ce nom, je le porte comme une promesse : celle d’un service de conciergerie sérieux, humain, et à la hauteur de vos attentes.
@@ -17,8 +17,8 @@ export default function PageApropos() {
             </div>
 
 
-            <div className="flex flex-col gap-y-4 w-full ">
-                <h1 className="font-bold text-2xl md:text-3xl text-[#DCA797] " >Notre engagement</h1>
+            <div title="Notre engagement" id="engagement" className="flex flex-col gap-y-4 w-full ">
+                <h1 className="font-bold text-2xl text-center md:text-3xl text-[#DCA797] " >Notre engagement</h1>
                 <p title="engagement" className="text-justify" >
                     Avec Grace azur services, je vous propose bien plus qu’un simple ménage :
                     C’est un service sur mesure, où chaque logement est préparé avec soin pour offrir une expérience impeccable à vos voyageurs.
@@ -30,8 +30,8 @@ export default function PageApropos() {
                 </p>
             </div>
 
-            <div className="flex flex-col gap-y-4 w-full ">
-                <h1 className="font-bold text-2xl md:text-3xl text-[#DCA797] "  >Pourquoi nous choisir</h1>
+            <div title="Pourquoi nous choisir" id="pourquoi-nous" className="flex flex-col gap-y-4 w-full ">
+                <h1 className="font-bold text-2xl text-center md:text-3xl text-[#DCA797] "  >Pourquoi nous choisir</h1>
                 <p title="Pourquoi nous choisir" className="text-justify"  >
                     Avec Grace azur services, je vous propose bien plus qu’un simple ménage :
                     C’est un service sur mesure, où chaque logement est préparé avec soin pour offrir une expérience impeccable à vos voyageurs.

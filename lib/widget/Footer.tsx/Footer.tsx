@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white  py-10 px-4">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 pt-7">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pt-7">
         {/* Colonne 1 : Logo, slogan, politiques */}
         <div className="flex flex-col items-start">
           <Image
@@ -13,13 +14,13 @@ export default function Footer() {
             height={40}
             className="mb-4"
           />
-          <p className="mb-6 text-sm">Votre slogan ici</p>
-          <a href="/politique-confidentialite" className="text-xs hover:underline mb-2">
+          <p className="mb-6 text-sm">Découvrez le plaisir d'un intérieur impeccable avec Grace Azur Services : Là où la propreté rime avec sérénité et éclat.</p>
+          <Link href="/politics" className="text-xs hover:underline mb-2">
             Politique de confidentialité
-          </a>
-          <a href="/mentions-legales" className="text-xs hover:underline">
+          </Link>
+          <Link href="/mentions-legales" className="text-xs hover:underline">
             Mentions légales
-          </a>
+          </Link>
         </div>
 
         {/* Colonne 2 : Notre société */}
@@ -27,19 +28,22 @@ export default function Footer() {
           <h2 className="font-semibold text-2xl mb-8">Notre société</h2>
           <ul className="space-y-4  ">
             <li>
-              <a href="/qui-sommes-nous" className="hover:underline">Qui sommes-nous</a>
+              <Link href="/a-propos#qui-sommes-nous" className="hover:underline">Qui sommes-nous</Link>
             </li>
             <li>
-              <a href="/pourquoi-nous" className="hover:underline">Pourquoi nous</a>
+              <Link href="/a-propos#pourquoi-nous" className="hover:underline">Pourquoi nous</Link>
             </li>
             <li>
-              <a href="/nos-services" className="hover:underline">Nos services</a>
+              <Link href="/a-propos#engagement" className="hover:underline">Nos engagements</Link>
             </li>
             <li>
-              <a href="/zone-intervention" className="hover:underline">Zone d’intervention</a>
+              <Link href="/services" className="hover:underline">Nos services</Link>
             </li>
             <li>
-              <a href="/nos-tarifs" className="hover:underline">Nos tarifs</a>
+              <Link  href="/#localisation" className="hover:underline">Zone d’intervention</Link>
+            </li>
+            <li>
+              <Link href="/tarifs" className="hover:underline">Nos tarifs</Link>
             </li>
           </ul>
         </div>
@@ -48,9 +52,9 @@ export default function Footer() {
         <div>
           <h2 className="font-semibold text-2xl mb-4">Contactez-nous</h2>
           <ul className="space-y-4 text-sm">
-            <li>
+            {/* <li>
               <a href="/contact" className="hover:underline">Contact</a>
-            </li>
+            </li> */}
             <li>
               <span>Horaires : Lun-Ven 9h-18h</span>
             </li>
@@ -64,7 +68,7 @@ export default function Footer() {
         </div>
 
         {/* Colonne 4 : localisation */}
-        <div>
+        {/* <div>
           <h2 className="font-semibold text-2xl mb-4">Contactez-nous</h2>
           <ul className="space-y-4 text-sm">
             <li>
@@ -80,12 +84,12 @@ export default function Footer() {
               <span>Email : contact@votresite.com</span>
             </li>
           </ul>
-        </div>
+        </div> */}
 
 
       </div>
       <div className="mt-8 text-center text-xs text-gray-400">
-        © {new Date().getFullYear()} Votre Société. Tous droits réservés.
+        © {new Date().getFullYear()} Azur Services. Tous droits réservés.
       </div>
     </footer>
   );

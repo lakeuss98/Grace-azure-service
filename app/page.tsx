@@ -19,8 +19,7 @@ export default function Home() {
                 <div className="flex py-3 w-full justify-center items-center px-6 ">
                     <Link href={'/devis'} className="flex cursor-pointer text-white py-4 bg-[#2e6417] w-full md:w-[30%] font-medium md:font-bold  rounded-lg justify-center items-center " >{'Demander un devis'}</Link>
                 </div>
-                {/* <div className="flex flex-col justify-start py-[100px] bg-amber-300 items-center ">
-                </div> */}
+                {/* <div className="flex flex-col justify-start py-[100px] bg-amber-300 items-center "> </div> */}
             </div>
             {/* Pourquoi nous ? */}
             <section title="Pourquoi nous ?" className="px-4 sm:px-20 md:px-[15%] py-12  ">

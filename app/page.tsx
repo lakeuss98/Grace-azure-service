@@ -1,15 +1,37 @@
+"use client"
 import CardSection from "@/lib/components/CardSection";
 import Image from "next/image";
 import { ContentFomePage } from "@/lib/database"
-import { Button } from "@/components/ui/button";
+import {  SECONDARY_COLOR } from "@/lib/const/menuList";
+import logoTitle from "@/public/icon/logoTitle.png"
 import Link from "next/link";
+import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import { useEffect, useState } from "react";
+
 
 
 export default function Home() {
+    const [api, setApi] = useState<CarouselApi>()
+    const [current, setCurrent] = useState(0)
+    const [count, setCount] = useState(0)
+
+    useEffect(() => {
+        if (!api) {
+            return
+        }
+
+        setCount(api.scrollSnapList().length)
+        setCurrent(api.selectedScrollSnap() + 1)
+
+        api.on("select", () => {
+            setCurrent(api.selectedScrollSnap() + 1)
+        })
+    }, [api])
+
     return (
         <div>
-            <div className="flex flex-col gap-y-0 md:gap-y-0 md:space-y-0 pt-[50px] md:pt-[70px]  h-[70vh] items-center bg-[url('/img/mob.png')]  lg:bg-[url('/img/bg-home.png')] bg-cover bg-center lg:bg-cover lg:bg-center w-full font-[family-name:var(--font-geist-sans)]">
-                <Image className="w-[150px] h-[150px] flex md:w-[300px] md:h-[300px] " src="/img/img-grace.png" alt="bg-home" width={300} height={300} />
+            <div className="flex flex-col justify-around gap-y-0 md:gap-y-0 md:space-y-0 pt-[50px] md:pt-[70px]  h-[70vh] items-center bg-[url('/img/mob.png')]  lg:bg-[url('/img/bg-home.png')] bg-cover bg-center lg:bg-cover lg:bg-center w-full font-[family-name:var(--font-geist-sans)]">
+                <Image className="w-[263px] h-[149px] flex md:w-[400px] md:h-[227px] " src={logoTitle} alt="bg-home" width={300} height={300} />
                 <div className="flex text-base font-normal md:text-lg md:font-medium font-dancing text-center">
                     Votre partenaire pour un intérieur lumineux!
                 </div>
@@ -17,10 +39,11 @@ export default function Home() {
                     Découvrez le plaisir d'un intérieur impeccable avec Grace Azur Services : Là où la propreté rime avec sérénité et éclat.
                 </p>
                 <div className="flex py-3 w-full justify-center items-center px-6 ">
-                    <Link href={'/devis'} className="flex cursor-pointer text-white py-4 bg-[#2e6417] w-full md:w-[30%] font-medium md:font-bold  rounded-lg justify-center items-center " >{'Demander un devis'}</Link>
+                    <Link href={'/devis'} className={`flex cursor-pointer text-white py-4 bg-[${SECONDARY_COLOR}] w-full md:w-[30%] font-medium md:font-bold  rounded-lg justify-center items-center `} >{'Demander un devis'}</Link>
                 </div>
                 {/* <div className="flex flex-col justify-start py-[100px] bg-amber-300 items-center "> </div> */}
             </div>
+
             {/* Pourquoi nous ? */}
             <section title="Pourquoi nous ?" className="px-4 sm:px-20 md:px-[15%] py-12  ">
                 <div className="flex text-3xl md:text-4xl font-bold justify-center  py-4 w-full col-span-2 ">Pourquoi nous ?</div>
@@ -40,7 +63,7 @@ export default function Home() {
 
                     </div>                    <span className="flex justify-center text-center md:text-[16px] md:items-center font-semibold" >Disponibilité les soirs et les week-ends  </span>
                     <div className="md:col-span-4 col-span-1 md:px-[40%] md:py-2 py-2  ">
-                        <a href={'/a-propos'} className="bg-[#F49595]/80 flex rounded-xl py-4 text-white font-bold justify-center items-center px-2.5 hover:underline">En savoir plus →</a>
+                        <a href={'/a-propos'} className={` bg-[#db5050] flex rounded-xl py-4 text-white font-bold justify-center items-center px-2.5 hover:underline`}>En savoir plus →</a>
 
                     </div>
 
@@ -56,6 +79,7 @@ export default function Home() {
                 <CardSection title={""} urlImage={ContentSectionService.service1.urlImage} description={ContentSectionService.service1.Description} link={ContentSectionService.service1.link}  />
                 </div>
             </section> */}
+
             {/* nos services */}
             <section title="Nos services" id="service" className="px-4 sm:px-20 md:px-[15%] py-12">
                 <div className="flex text-3xl md:text-4xl font-bold justify-center  py-5 w-full col-span-2 ">Nos services</div>
@@ -81,7 +105,26 @@ export default function Home() {
 
             </section>
             {/* nos engagements */}
-            <section title="Nos engagements" className="px-4 sm:px-20 md:px-[15%] py-12"></section>
+            <section title="Nos engagements" className="px-4 flex flex-col gap-y-3 sm:px-20 md:px-[15%] py-12">
+                <h2 className="text-3xl py-4 flex justify-center md:text-4xl font-bold">Nos engagements</h2>
+                <div className="grid gap-12  grid-cols-1 md:grid-cols-3  ">
+                    {
+                        ContentFomePage.SectionEngagement.map((engagement, index) =>
+
+                            <div accessKey={engagement.title} className="flex flex-col transition-all duration-300 md:hover:scale-105 gap-y-3 items-center justify-center" key={index}>
+                                <Image className=" md:w-[200px] md:h-[200px] " src={engagement.urlImage} alt="icon" width={100} height={100} />
+                                <h3 className="text-center text-lg md:text-2xl font-bold" >{engagement.title}</h3>
+                                <p className="text-center font-medium md:font-semibold text-sm md:text-base " >{engagement.Description}</p>
+
+                            </div>
+                        )
+                    }
+
+
+
+                </div>
+
+            </section>
 
             {/* Localisation */}
             <section id="localisation" title="localisation" className="px-4 sm:px-20  md:px-[15%] py-12">
@@ -124,25 +167,36 @@ export default function Home() {
                 </div>
             </section>
             {/* QUELQUES AVIS CLIENTS */}
-            <section title="Avis" className="flex flex-col   px-4   md:px-[15%] py-12" >
-                <h2 className="text-2xl flex justify-center md:text-4xl py-4 font-bold">QUELQUES AVIS CLIENTS</h2>
+            <section title="Avis" className="flex flex-col px-4  md:px-[15%]   py-12" >
+                <h2 className=" text-2xl md:pb-[75px]  flex justify-center md:text-4xl py-4 font-bold">QUELQUES AVIS CLIENTS</h2>
+                
+                <Carousel setApi={setApi} className=" bg-transparent " opts={{
+                    align: "start",
+                    loop: true,
+                   // slidesToScroll: 1,
+                    }}  >
+                    <CarouselContent  className=" flex" >
+                        {
+                            ContentFomePage.ListAvis.map((avis, index) => (
+                                <CarouselItem key={index} className="flex justify-center cursor-pointer pl-1 basis md:basis-1/3 transform-3d md:hover:scale-105  ">
+                                    <div key={index+avis.nom} className="flex px-3 flex-col items-center gap-y-4 ">
+                                        <h1 className="text-2xl  md:font-bold">{avis.nom}</h1>
+                                        <span className="text-lg font-medium md:text-xl md:font-bold">{avis.title}</span>
+                                        <p className=" text-base md:text-xl  text-center justify-center flex-wrap ">{avis.Description}</p>
+                                       
+                                    </div>
+                                </CarouselItem>
+                            ))
+                        }
+                        
+                    </CarouselContent>
+                    <CarouselPrevious className="" />
+                    <CarouselNext />
+                </Carousel>
+                <div className="text-muted-foreground py-2 text-center text-sm">
+        Slide {current} of {count}  
+      </div>
 
-                <div className="flex py-2 w-full md:space-x-[70px] space-x-2 pr-[250px]   md:pr-[150px] " >
-
-                    <div className="md:w-[250px] w-[30px] animate-scroll-x bg-amber-200 h-24 ">Carte 1</div>
-                    <div className="md:w-[250px] w-[30px] animate-scroll-x bg-amber-200 h-24 ">Carte 2</div>
-                    <div className="md:w-[250px] w-[30px] animate-scroll-x bg-amber-200 h-24 ">Carte 3</div>
-                    <div className="md:w-[250px] w-[30px] animate-scroll-x bg-amber-200 h-24 ">Carte 4</div>
-                    <div className="md:w-[250px] w-[30px] animate-scroll-x bg-amber-200 h-24 ">Carte 5</div>
-                    <div className="md:w-[250px] w-[30px] animate-scroll-x bg-amber-200 h-24 ">Carte 6</div>
-                    {/* <div className="md:w-[250px] w-[30px] animate-scroll-x bg-amber-200 h-24 ">Carte 7</div>
-                    <div className="md:w-[250px] w-[30px] animate-scroll-x bg-amber-200 h-24 ">Carte 8</div>
-                    <div className="md:w-[250px] w-[30px] animate-scroll-x bg-amber-200 h-24 ">Carte 9</div>
-                    <div className="md:w-[250px] w-[30px] animate-scroll-x bg-amber-200 h-24 ">Carte 10</div>
-                    <div className="md:w-[250px] w-[30px] animate-scroll-x bg-amber-200 h-24 ">Carte 11</div>
-                    <div className="md:w-[250px] w-[30px] animate-scroll-x bg-amber-200 h-24 ">Carte 12</div>
-                 */}
-                </div>
             </section>
         </div>
     );

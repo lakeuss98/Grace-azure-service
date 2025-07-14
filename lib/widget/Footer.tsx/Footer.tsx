@@ -1,19 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import iconTitle from "@/public/icon/logoTitle.png"
 export default function Footer() {
   return (
-    <footer className="bg-black text-white  py-10 px-4">
+    <footer className="bg-black text-white  py-7 px-4">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pt-7">
         {/* Colonne 1 : Logo, slogan, politiques */}
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col md:items-start">
+          <div className="flex w-full justify-center md:justify-start py-3 ">
           <Image
-            src={"/icon/logo.png"} // Remplace par ton logo
-            alt="Logo"
-            width={120}
-            height={40}
-            className="mb-4"
+            src={iconTitle}
+            
+            alt="Logo azur service "
+            width={356}
+            height={200}
+            className="  flex w-[221px] h-[125px] md:w-[356px] md:h-[200px] "
           />
+          </div>
+          
           <p className="mb-6 text-sm">Découvrez le plaisir d'un intérieur impeccable avec Grace Azur Services : Là où la propreté rime avec sérénité et éclat.</p>
           <Link href="/politics" className="text-xs hover:underline mb-2">
             Politique de confidentialité
@@ -24,7 +28,7 @@ export default function Footer() {
         </div>
 
         {/* Colonne 2 : Notre société */}
-        <div>
+        <div className="flex flex-col md:items-center" >
           <h2 className="font-semibold text-2xl mb-8">Notre société</h2>
           <ul className="space-y-4  ">
             <li>
@@ -49,7 +53,7 @@ export default function Footer() {
         </div>
 
         {/* Colonne 3 : Contact */}
-        <div>
+        <div className="flex flex-col md:items-center" >
           <h2 className="font-semibold text-2xl mb-4">Contactez-nous</h2>
           <ul className="space-y-4 text-sm">
             {/* <li>

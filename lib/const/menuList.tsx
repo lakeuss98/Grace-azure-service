@@ -9,3 +9,8 @@ export const menus = [
 export const SERVICE_ID = "service_hejryxe"
 export const TEMPLATE_ID = "template_x6sdeyn"
 export const PUBLIC_KEY = "n5HPt35rhBbj56E9x"
+
+export const ACCENT_COLOR ="#db5050"
+export const SECONDARY_COLOR ="#2e6417"
+export const BUTTON_COLOR ="#F49595"
+

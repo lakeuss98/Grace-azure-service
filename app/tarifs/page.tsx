@@ -11,18 +11,18 @@ export default function pageTarifs() {
             </h1>
 
             <article title="nos tarif" className="flex gap-y-4 flex-col  w-full ">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#f49595] ">Nos Tarifs</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-black ">Nos Tarifs</h2>
                 <p className=" text-justify ">Chez Azur Sisters Services, nous comprenons que chaque client est unique, avec des besoins spécifiques qui méritent une attention personnalisée. C'est pourquoi nous avons adopté une approche sur mesure pour nos tarifications, garantissant que vous recevez exactement le service dont vous avez besoin, au meilleur prix possible.</p>
             </article>
 
             <article title="tarification" className="flex gap-y-4 flex-col w-full ">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#f49595] ">Une Tarification Transparente et Personnalisée</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-text-black ">Une Tarification Transparente et Personnalisée</h2>
                 <p className=" text-justify ">
                    {" Nous ne proposons pas de grille tarifaire fixe car nous croyons en l'importance d'adapter nos services à vos exigences particulières. Que ce soit pour le nettoyage résidentiel, la garde d'enfants, l'accompagnement des personnes âgées, ou le nettoyage de bateaux, nous prenons le temps de comprendre vos attentes pour vous fournir une estimation précise et juste."}               </p>
             </article>
 
             <article title="Pourquoi nous contacer" className="flex gap-y-4 flex-col w-full ">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#f49595] ">Pourquoi nous Contacter Directement ?</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-black ">Pourquoi nous Contacter Directement ?</h2>
 
                 <ul className="flex flex-col gap-y-3 list-inside list-disc" >
                     <li>
@@ -57,7 +57,7 @@ export default function pageTarifs() {
             </article>
 
             <article title="comment obtenir" className="flex flex-col gap-y-4 w-full ">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#f49595] ">Comment Obtenir Votre Devis Personnalisé ?</h2>
+                <h2 className="text-2xl md:text-3xl font-bold text-black ">Comment Obtenir Votre Devis Personnalisé ?</h2>
                 <p className="text-justify ">
                     Pour recevoir votre devis personnalisé, nous vous invitons à remplir notre formulaire de contact ci-dessous. Ce formulaire est conçu pour recueillir les informations essentielles concernant votre demande, vous permettant de décrire en détail vos besoins.
                 </p>

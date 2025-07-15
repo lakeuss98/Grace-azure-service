@@ -18,7 +18,7 @@ export default function Footer() {
             />
           </div>
 
-          <p className="mb-6 text-sm">Découvrez le plaisir d'un intérieur impeccable avec Grace Azur Services : Là où la propreté rime avec sérénité et éclat.</p>
+          {/* <p className="mb-6 text-sm">Découvrez le plaisir d'un intérieur impeccable avec Grace Azur Services : Là où la propreté rime avec sérénité et éclat.</p> */}
           <div className=" hidden md:flex flex-col  gap-x-2 gap-y-1">
             <Link href="/politics" className="text-xs hover:underline mb-2">
               Politique de confidentialité

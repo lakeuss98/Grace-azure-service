@@ -93,10 +93,9 @@ export default function Devis() {
         setFormData((prev) => ({ ...prev, service: selectedServices }));
       };
     
-    return (
-        <section className="flex flex-col w-full min-h-screen bg-transparent items-center justify-start px-4  ">
+    return ( 
+        <section className="flex flex-col w-full bg-transparent items-center  pb-24 px-4 ">
              <h1 className="flex text-4xl font-bold   text-center py-[50px] text-[#4B2E05]  ">Demande de devis</h1>
-          
             {/* <p className="max-w-2xl text-center mb-10 text-[#4B2E05]">
                 Remplissez le formulaire ci-dessous pour obtenir un devis personnalisé pour nos services de ménage à domicile. Nous vous répondrons dans les plus brefs délais !
             </p> */}
@@ -128,13 +127,14 @@ export default function Devis() {
                     <motion.button
                     type="submit"
                     ref={refButtonDevis}
-                    initial={{ x: +400, opacity: 0 }}
+                    initial={{ x: +40, opacity: 0 }}
                     animate={inViewButtonDevis?{ x: 0,y:0, opacity: 1 }:{}}
                     transition={{ duration: 0.8, ease: 'easeInOut',type:"spring" }}
-                    className={`flex cursor-pointer text-white py-4 bg-[${SECONDARY_COLOR}] w-full md:w-[30%] font-medium md:font-bold  rounded-lg justify-center items-center `} >
+                    className={`flex cursor-pointer text-white py-4 bg-[${SECONDARY_COLOR}] w-full md:w-[60%] font-medium md:font-bold  rounded-lg justify-center items-center `} >
                         {'Demander un devis'}
                     </motion.button>
-                </div>            </form>
+                </div>            
+            </form>
         </section>
     );
 }

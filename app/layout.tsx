@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import NavBar from  '@/lib/widget/NavBar';
 import Footer from "@/lib/widget/Footer.tsx/Footer";
+import { ToastContainer } from "react-toastify";
+import PhoneButton from "@/lib/widget/Button/PhoneButton";
+
 //import Footer from "@/lib/widget/Footer.tsx/Footer";
 
 // import { Dancing_Script } from 'next/font/google'
@@ -29,22 +32,25 @@ export const metadata: Metadata = {
     ],
     icons:'/icon/logo.png',
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="en">
       <body 
-      className="flex flex-col h-screen bg-[#F49595]/5 "
-      >
+      className="flex flex-col h-screen bg-[#db5050]/5 "
+      > 
+     <PhoneButton/>
+        <ToastContainer />
       <NavBar />
-      <div className="flex flex-col overflow-y-scroll    flex-grow ">
+      <div className="flex flex-col overflow-y-scroll  flex-grow ">
       {children}
       <Footer/>
       </div>
-     
       </body>
      
     </html>

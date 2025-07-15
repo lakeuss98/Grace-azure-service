@@ -1,16 +1,17 @@
 export const ContentFomePage = {
     SectionService: {
-        conciergerie: {
-            link: "/services",
-            urlImage: "/img/about.png",
-            title: "Conciergerie Airbnb",
-            Description: "Nettoyage de votre location courte durée , gestion du linge et mise à disposition des produits de première nécessité.",
-        },
+       
         appartement: {
             link: "/services",
             urlImage: "/img/about.png",
             title: "Nettoyage d'appartement",
             Description: "Entretien régulier ou ponctuel de votre appartement : sols, poussière, sanitaires, cuisine, vitres, et espaces communs. Adapté à vos besoins et à votre rythme."
+        },
+        conciergerie: {
+            link: "/services",
+            urlImage: "/img/about.png",
+            title: "Conciergerie Airbnb",
+            Description: "Nettoyage de votre location courte durée , gestion du linge et mise à disposition des produits de première nécessité.",
         },
         domicile: {
             link: "/services",

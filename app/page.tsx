@@ -2,44 +2,73 @@
 import CardSection from "@/lib/components/CardSection";
 import Image from "next/image";
 import { ContentFomePage } from "@/lib/database"
-import {  SECONDARY_COLOR } from "@/lib/const/menuList";
+import { SECONDARY_COLOR } from "@/lib/const/menuList";
 import logoTitle from "@/public/icon/logoTitle.png"
-import Link from "next/link";
 import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
-
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import Engagement from "@/lib/components/Engagement";
+import { Phone } from "lucide-react";
 
 
 export default function Home() {
     const [api, setApi] = useState<CarouselApi>()
     const [current, setCurrent] = useState(0)
     const [count, setCount] = useState(0)
+    const [ref, inView] = useInView({ triggerOnce: false, threshold: [0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1] });
+    const [refSubtitle, inViewSubtitle] = useInView({ triggerOnce: false, threshold: [0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1] });
+    const [refButton, inViewButton] = useInView({ triggerOnce: false, threshold: [0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1] });
+    const [refButtonDevis, inViewButtonDevis] = useInView({ triggerOnce: false, threshold: [0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1] });
 
     useEffect(() => {
         if (!api) {
-            return
+            return;
         }
 
-        setCount(api.scrollSnapList().length)
-        setCurrent(api.selectedScrollSnap() + 1)
+        setCount(api.scrollSnapList().length);
+        setCurrent(api.selectedScrollSnap() + 1);
 
         api.on("select", () => {
-            setCurrent(api.selectedScrollSnap() + 1)
-        })
+            setCurrent(api.selectedScrollSnap() + 1);
+        });
     }, [api])
 
     return (
         <div>
+
             <div className="flex flex-col justify-around gap-y-0 md:gap-y-0 md:space-y-0 pt-[50px] md:pt-[70px]  h-[70vh] items-center bg-[url('/img/mob.png')]  lg:bg-[url('/img/bg-home.png')] bg-cover bg-center lg:bg-cover lg:bg-center w-full font-[family-name:var(--font-geist-sans)]">
                 <Image className="w-[263px] h-[149px] flex md:w-[400px] md:h-[227px] " src={logoTitle} alt="bg-home" width={300} height={300} />
-                <div className="flex text-base font-normal md:text-lg md:font-medium font-dancing text-center">
+                <motion.div
+                ref={ref}
+                    initial={{ x: -200, opacity: 0 }}
+                    animate={inView?{ x: 0, opacity: 1 }:{}}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className="flex text-base font-normal md:text-lg md:font-medium font-dancing text-center"
+                >
                     Votre partenaire pour un intérieur lumineux!
-                </div>
-                <p className="text-center flex md:w-[30%] w-[70%]  md:text-2xl text-lg font-bold  md:font-bold md:py-6 py-8 " >
+                </motion.div>
+                <motion.p
+                ref={refSubtitle}
+                    initial={{ x: +200, opacity: 0 }}
+                    animate={inViewSubtitle?{ x: 0,scale:1, opacity: 1 }:{}}
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+
+            
+                    className="text-center flex md:w-[30%] w-[70%]  md:text-2xl text-lg font-bold  md:font-bold md:py-6 py-8 " 
+                >
                     Découvrez le plaisir d'un intérieur impeccable avec Grace Azur Services : Là où la propreté rime avec sérénité et éclat.
-                </p>
+                    </motion.p>
+                {/* <p 
+                className="text-center flex md:w-[30%] w-[70%]  md:text-2xl text-lg font-bold  md:font-bold md:py-6 py-8 " >
+                </p> */}
                 <div className="flex py-3 w-full justify-center items-center px-6 ">
-                    <Link href={'/devis'} className={`flex cursor-pointer text-white py-4 bg-[${SECONDARY_COLOR}] w-full md:w-[30%] font-medium md:font-bold  rounded-lg justify-center items-center `} >{'Demander un devis'}</Link>
+                    <motion.a
+                    ref={refButtonDevis}
+                    initial={{ x: +400, opacity: 0 }}
+                    animate={inViewButtonDevis?{ x: 0,y:0, opacity: 1 }:{}}
+                    transition={{ duration: 0.8, ease: 'easeInOut',type:"spring" }}
+                    href={'/devis'} className={`flex cursor-pointer text-white py-4 bg-[${SECONDARY_COLOR}] w-full md:w-[30%] font-medium md:font-bold  rounded-lg justify-center items-center `} >{'Demander un devis'}</motion.a>
                 </div>
                 {/* <div className="flex flex-col justify-start py-[100px] bg-amber-300 items-center "> </div> */}
             </div>
@@ -63,22 +92,18 @@ export default function Home() {
 
                     </div>                    <span className="flex justify-center text-center md:text-[16px] md:items-center font-semibold" >Disponibilité les soirs et les week-ends  </span>
                     <div className="md:col-span-4 col-span-1 md:px-[40%] md:py-2 py-2  ">
-                        <a href={'/a-propos'} className={` bg-[#db5050] flex rounded-xl py-4 text-white font-bold justify-center items-center px-2.5 hover:underline`}>En savoir plus →</a>
+                        <motion.a
+                        ref={refButton}
+                        initial={{ x: +200, opacity: 0,scale:0.8 }}
+                        animate={inViewButton?{ x: 0,scale:1, opacity: 1 }:{}}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        href={'/a-propos'} className={` bg-[#db5050] flex rounded-xl py-4 text-white font-bold justify-center items-center px-2.5 hover:underline`}>En savoir plus →</motion.a>
 
                     </div>
 
                 </div>
 
             </section>
-
-            {/* À propos */}
-            {/* <section title="à propos" id="about" className="px-4  sm:px-20 md:px-[15%] py-12">
-                <div className="flex text-3xl font-bold  py-5 w-full col-span-2 ">{ContentSectionService.service1.title}</div>
-                <div className="grid gap-x-[100px] gap-y-[50px]  grid-cols-1 md:grid-cols-2 ">
-                <CardSection title={""} urlImage={ContentSectionService.service1.urlImage} description={ContentSectionService.service1.Description} link={ContentSectionService.service1.link}  />
-                <CardSection title={""} urlImage={ContentSectionService.service1.urlImage} description={ContentSectionService.service1.Description} link={ContentSectionService.service1.link}  />
-                </div>
-            </section> */}
 
             {/* nos services */}
             <section title="Nos services" id="service" className="px-4 sm:px-20 md:px-[15%] py-12">
@@ -93,11 +118,13 @@ export default function Home() {
                 <CardSection title={ContentFomePage.SectionService.domicile.title} urlImage={ContentFomePage.SectionService.domicile.urlImage} description={ContentFomePage.SectionService.domicile.Description} link={ContentFomePage.SectionService.domicile.link} />
                 </div> */}
 
-                <div className="grid gap-x-[100px] gap-y-[50px] justify-items-center   place-items-center  grid-cols-1 md:grid-cols-2 ">
+                <div className="grid  gap-x-[100px] gap-y-[50px] justify-items-center   place-items-center  grid-cols-1 md:grid-cols-2 ">
+                    
                     <CardSection title={ContentFomePage.SectionService.conciergerie.title} urlImage={ContentFomePage.SectionService.conciergerie.urlImage} description={ContentFomePage.SectionService.conciergerie.Description} link={ContentFomePage.SectionService.conciergerie.link} />
-                    <CardSection title={ContentFomePage.SectionService.appartement.title} urlImage={ContentFomePage.SectionService.appartement.urlImage} description={ContentFomePage.SectionService.appartement.Description} link={ContentFomePage.SectionService.appartement.link} />
+                    <CardSection title={ContentFomePage.SectionService.domicile.title} urlImage={ContentFomePage.SectionService.domicile.urlImage} description={ContentFomePage.SectionService.domicile.Description} link={ContentFomePage.SectionService.domicile.link} />
+
                     <div className="md:col-span-2 md:px-[25%]">
-                        <CardSection title={ContentFomePage.SectionService.domicile.title} urlImage={ContentFomePage.SectionService.domicile.urlImage} description={ContentFomePage.SectionService.domicile.Description} link={ContentFomePage.SectionService.domicile.link} />
+                    <CardSection title={ContentFomePage.SectionService.appartement.title} urlImage={ContentFomePage.SectionService.appartement.urlImage} description={ContentFomePage.SectionService.appartement.Description} link={ContentFomePage.SectionService.appartement.link} />
 
                     </div>
 
@@ -110,20 +137,11 @@ export default function Home() {
                 <div className="grid gap-12  grid-cols-1 md:grid-cols-3  ">
                     {
                         ContentFomePage.SectionEngagement.map((engagement, index) =>
-
-                            <div accessKey={engagement.title} className="flex flex-col transition-all duration-300 md:hover:scale-105 gap-y-3 items-center justify-center" key={index}>
-                                <Image className=" md:w-[200px] md:h-[200px] " src={engagement.urlImage} alt="icon" width={100} height={100} />
-                                <h3 className="text-center text-lg md:text-2xl font-bold" >{engagement.title}</h3>
-                                <p className="text-center font-medium md:font-semibold text-sm md:text-base " >{engagement.Description}</p>
-
-                            </div>
+                            <Engagement key={index} engagement={engagement} index={index} />
+                           
                         )
                     }
-
-
-
                 </div>
-
             </section>
 
             {/* Localisation */}
@@ -169,33 +187,31 @@ export default function Home() {
             {/* QUELQUES AVIS CLIENTS */}
             <section title="Avis" className="flex flex-col px-4  md:px-[15%]   py-12" >
                 <h2 className=" text-2xl md:pb-[75px]  flex justify-center md:text-4xl py-4 font-bold">QUELQUES AVIS CLIENTS</h2>
-                
+
                 <Carousel setApi={setApi} className=" bg-transparent " opts={{
                     align: "start",
                     loop: true,
-                   // slidesToScroll: 1,
-                    }}  >
-                    <CarouselContent  className=" flex" >
+                    // slidesToScroll: 1,
+                }}  >
+                    <CarouselContent className=" flex" >
                         {
                             ContentFomePage.ListAvis.map((avis, index) => (
-                                <CarouselItem key={index} className="flex justify-center cursor-pointer pl-1 basis md:basis-1/3 transform-3d md:hover:scale-105  ">
-                                    <div key={index+avis.nom} className="flex px-3 flex-col items-center gap-y-4 ">
+                                <CarouselItem key={index} className="flex justify-center cursor-pointer pl-1 basis md:basis-1/2 md:hover:scale-105  ">
+                                    <div key={index + avis.nom} className="flex flex-col px-8 items-center gap-y-4 ">
                                         <h1 className="text-2xl  md:font-bold">{avis.nom}</h1>
                                         <span className="text-lg font-medium md:text-xl md:font-bold">{avis.title}</span>
                                         <p className=" text-base md:text-xl  text-center justify-center flex-wrap ">{avis.Description}</p>
-                                       
                                     </div>
                                 </CarouselItem>
                             ))
                         }
-                        
                     </CarouselContent>
                     <CarouselPrevious className="" />
                     <CarouselNext />
                 </Carousel>
-                <div className="text-muted-foreground py-2 text-center text-sm">
-        Slide {current} of {count}  
-      </div>
+                <div className="  flex justify-center md:pt-9 text-muted-foreground py-2 text-center text-sm">
+                    Slide {current} of {ContentFomePage.ListAvis.length}
+                </div>
 
             </section>
         </div>

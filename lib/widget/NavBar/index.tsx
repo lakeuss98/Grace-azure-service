@@ -12,9 +12,9 @@ const pathname = usePathname()
 
 return(
 <header className="flex flex-col w-full  items-center  ">
-    <div className="flex bg-transparent justify-end w-full">
+    {/* <div className="flex bg-transparent justify-end w-full">
         <span className={`bg-[${ACCENT_COLOR}] pl-[20px]   text-[25px]  py-2 pr-[70px] `}>6 98 25 14 33</span>
-    </div>
+    </div> */}
     {/* lg:px-[65px] */}
     <nav className={`flex  drop-shadow-xl md:px-[15%] font-bold  bg-[${ACCENT_COLOR}] px-[20px] py-3 lg:py-4  flex-row   w-full items-center justify-between`}>
         <Link className="flex" href={"/"}> <Image className=" h-[57px] w-[58px] lg:h-[70px] lg:w-[69px]"   src={logoAzur} width={58} height={57} alt={"logo Grace azure Service"}  /> </Link>

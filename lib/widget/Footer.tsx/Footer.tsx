@@ -3,28 +3,30 @@ import Link from "next/link";
 import iconTitle from "@/public/icon/logoTitle.png"
 export default function Footer() {
   return (
-    <footer className="bg-black text-white  py-7 px-4">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pt-7">
+    <footer className="bg-black text-white  py-7 px-4 gap-y-3 ">
+      <div className="max-w-7xl mx-auto grid grid-cols-1  md:grid-cols-3 gap-8 pt-7">
         {/* Colonne 1 : Logo, slogan, politiques */}
         <div className="flex flex-col md:items-start">
           <div className="flex w-full justify-center md:justify-start py-3 ">
-          <Image
-            src={iconTitle}
-            
-            alt="Logo azur service "
-            width={356}
-            height={200}
-            className="  flex w-[221px] h-[125px] md:w-[356px] md:h-[200px] "
-          />
+            <Image
+              src={iconTitle}
+
+              alt="Logo azur service "
+              width={356}
+              height={200}
+              className="  flex w-[221px] h-[125px] md:w-[356px] md:h-[200px] "
+            />
           </div>
-          
+
           <p className="mb-6 text-sm">Découvrez le plaisir d'un intérieur impeccable avec Grace Azur Services : Là où la propreté rime avec sérénité et éclat.</p>
-          <Link href="/politics" className="text-xs hover:underline mb-2">
-            Politique de confidentialité
-          </Link>
-          <Link href="/mentions-legales" className="text-xs hover:underline">
-            Mentions légales
-          </Link>
+          <div className=" hidden md:flex flex-col  gap-x-2 gap-y-1">
+            <Link href="/politics" className="text-xs hover:underline mb-2">
+              Politique de confidentialité
+            </Link>
+            <Link href="/mentions-legales" className="text-xs hover:underline">
+              Mentions légales
+            </Link>
+          </div>
         </div>
 
         {/* Colonne 2 : Notre société */}
@@ -44,7 +46,7 @@ export default function Footer() {
               <Link href="/services" className="hover:underline">Nos services</Link>
             </li>
             <li>
-              <Link  href="/#localisation" className="hover:underline">Zone d’intervention</Link>
+              <Link href="/#localisation" className="hover:underline">Zone d’intervention</Link>
             </li>
             <li>
               <Link href="/tarifs" className="hover:underline">Nos tarifs</Link>
@@ -92,9 +94,20 @@ export default function Footer() {
 
 
       </div>
-      <div className="mt-8 text-center text-xs text-gray-400">
-        © {new Date().getFullYear()} Azur Services. Tous droits réservés.
+
+      <div className=" flex  pt-4 items-center flex-col text-center text-xs text-gray-400 gap-y-1">
+      <div className="flex w-full justify-center md:hidden   gap-x-2">
+          <Link href="/mentions-legales" className="text-xs flex hover:underline">
+            Mentions légales
+          </Link>
+          &
+          <Link href="/politics" className="text-xs flex hover:underline">
+            Politique de confidentialité
+          </Link>
+        </div>
+        <span className="flex md:text-base md:font-medium " > © {new Date().getFullYear()} Azur Services. Tous droits réservés.</span>
       </div>
+
     </footer>
   );
 }

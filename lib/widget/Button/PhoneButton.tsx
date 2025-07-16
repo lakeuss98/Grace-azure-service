@@ -8,6 +8,7 @@ export default function PhoneButton() {
 
     return (
         <motion.a  
+        href="tel:0765169106"
         ref={refButton}
         initial={{x:+40, y: +40, opacity: 0 }}
         animate={inViewButton?{ x: 0,y:0, opacity: 1 }:{}}
@@ -16,7 +17,7 @@ export default function PhoneButton() {
          > 
          
          <Phone/> 
-         <span>698251433</span> 
+         <span>0 7 65 16 91 06</span> 
          
          </motion.a> 
   

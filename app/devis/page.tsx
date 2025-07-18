@@ -33,24 +33,15 @@ export default function Devis() {
                     },
                     {
                         id: 2,
-                        name: "Nettoyage Copropriété",
+                        name: "Nettoyage domicile",
                         description: "",
                     },
                     {
                         id: 3,
-                        name: "Nettoyage Appartement ou villa ",
+                        name: "Nettoyage Appartement ",
                         description: "",
                     },
-                    {
-                        id: 4,
-                        name: "Nettoyage de bateaux",
-                        description: "",
-                    },
-                    {
-                        id: 5,
-                        name: "Nettoyage de bureaux",
-                        description: "",
-                    }        
+                       
     ] 
 
    //console.log(SERVICE_ID, TEMPLATE_ID);

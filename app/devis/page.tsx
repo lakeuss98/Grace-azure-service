@@ -25,7 +25,7 @@ export default function Devis() {
 
     const [refButtonDevis, inViewButtonDevis] = useInView({ triggerOnce: false, threshold: [0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1] });
     const [loading,setloading]= useState(false);
-   const services = [
+    const services = [
                     {
                         id: 1,
                         name: "Concergierie",
@@ -50,10 +50,7 @@ export default function Devis() {
                         id: 5,
                         name: "Nettoyage de bureaux",
                         description: "",
-                    }
-                    
-                    
-                    
+                    }        
     ] 
 
    //console.log(SERVICE_ID, TEMPLATE_ID);
@@ -134,8 +131,10 @@ export default function Devis() {
                 <textarea name="message" value={formData.message} onChange={(e)=>setFormData({...formData,message:e.target.value.toString()})} placeholder="Votre message ou demande particulière" rows={4} className="border border-[#DCA797] rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#DCA797]" />
                 <div className="flex py-3 w-full justify-center items-center px-6 ">
                     <motion.button
+
                     //disabled={true}
                     //onClick={ (e)=> sendEmail(e)}
+                    
                     type='submit'
                     ref={refButtonDevis}
                     initial={{ x: +40, opacity: 0 }}

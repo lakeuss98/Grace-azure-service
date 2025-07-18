@@ -3,21 +3,21 @@ export const ContentFomePage = {
        
         appartement: {
             link: "/services",
-            urlImage: "/img/about.png",
+            urlImage: "/images/Appartement1.jpg",
             title: "Nettoyage d'appartement",
             Description: "Entretien régulier ou ponctuel de votre appartement : sols, poussière, sanitaires, cuisine, vitres, et espaces communs. Adapté à vos besoins et à votre rythme."
         },
         conciergerie: {
             link: "/services",
-            urlImage: "/img/about.png",
+            urlImage:  "/images/Conciergerie.jpg",
             title: "Conciergerie Airbnb",
             Description: "Nettoyage de votre location courte durée , gestion du linge et mise à disposition des produits de première nécessité.",
         },
         domicile: {
             link: "/services",
-            urlImage: "/img/about.png",
+            urlImage: "/images/domicile.jpg",
             title: "Nettoyage de domicile",
-            Description: "Nettoyage de votre location courte durée , gestion du linge et mise à disposition des produits de première nécessité",
+            Description: "Service de ménage à domicile pour maisons villas: Nettoyage complet , repassage , lavage des vitres ,entretien des pièces de vie et chambres",
         },
 
     },
@@ -26,7 +26,7 @@ export const ContentFomePage = {
             imgsrc: "/images/Domicile.jpg",
             title: "Un appartement frais et propre ",
             description:
-                ` lea djanzoua2: Titre de la section: un appartement frais et propre 
+                ` 
 Grace azur services est votre partenaire de confiance pour le nettoyage d'appartements à Antibes et ses environs. Nous comprenons que votre temps est précieux et que maintenir un espace de vie propre et sain peut parfois devenir une tâche ardue. C'est là que nous intervenons !Notre équipe de professionnels qualifiés et expérimentés est dédiée à vous offrir un service de nettoyage d'appartements de haute qualité, adapté à vos besoins spécifiques. Que vous soyez un particulier débordé, un professionnel en déplacement constant ou un propriétaire souhaitant préparer un bien pour la location, nous avons la solution de nettoyage qu'il vous faut.Nous utilisons des produits de nettoyage efficaces et respectueux de l'environnement, ainsi que des techniques éprouvées pour garantir un résultat impeccable. Fini la poussière, les taches tenaces et le désordre : laissez-nous transformer votre appartement en un havre de paix propre et accueillant." . Ce que nous proposons:Nettoyage complet de l'appartement (toutes pièces)
 Nettoyage de cuisines (plans de travail, évier, électroménagers intérieurs et extérieurs)
 Nettoyage de salles de bain (toilettes, douches, baignoires, miroirs)
@@ -123,61 +123,61 @@ Confiez le nettoyage de votre appartement Airbnb à Antibes à des experts. Con
     },
     ListAvis: [
         {
-            nom: "JULIEN & MARIE",
+            nom: "LÉA & ANDRÉ",
             title: "Nettoyage de villa, ANTIBES,",
-            Description: "« Après une longue recherche d'une équipe fiable pour notre villa à Antibes, nous avons finalement trouvé Azur Sisters Services. Karine et son équipe ont été incroyables. Ils ont pris soin de chaque détail avec une grande attention. Nous ne pouvons que les recommander vivement ! »"
+            Description: "« Après une longue recherche d'une équipe fiable pour notre villa à Antibes, nous avons finalement trouvé Grace Azur Services. Carine et son équipe ont été incroyables. Ils ont pris soin de chaque détail avec une grande attention. Nous ne pouvons que les recommander vivement ! »"
         },
         {
-            nom: "DAMIEN",
-            title: " Nettoyage de bureaux, VALBONNE",
-            Description: "« Depuis que Fidèle et son équipe ont pris en charge le nettoyage de nos bureaux à Valbonne, l'atmosphère de travail est plus agréable. Leur souci du détail et leur flexibilité sont vraiment appréciés. »"
+            nom: "FRANCK",
+            title: " Nettoyage d'appartement , VALBONNE",
+            Description: "« Je suis extrêmement satisfait du service fourni par l’entreprise Grace azur services. Leur équipe est intervenue chez moi pour nettoyer  mon appartement, et je suis impressionné par la qualité du travail réalisé. Les résultats sont impeccables, et mon appartement  n'a jamais été aussi propre. Le professionnalisme et l'efficacité de leur équipe sont vraiment remarquables. De plus, ils ont été ponctuels et respectueux de mon domicile. Je recommande vivement L'entreprise Grace Azur services à tous ceux qui recherchent un service de nettoyage de haute qualité. Un grand merci à toute l'équipe pour leur excellent travail !             »"
         },
         {
             nom: "CHRISTINE",
             title: " Entretien de Copropriété, CANNES",
-            Description: "« En tant que syndic de copropriété à Cannes, trouver une équipe comme Azur Sisters Services a été une véritable aubaine. Leur dévouement et leur travail méticuleux nous ont vraiment impressionnés. La copropriété n'a jamais été aussi bien entretenue »."
+            Description: "« En tant que syndic de copropriété à Cannes, trouver une équipe comme Grace Azur Services a été une véritable aubaine. Leur dévouement et leur travail méticuleux nous ont vraiment impressionnés. La copropriété n'a jamais été aussi bien entretenue »."
         },
         {
-            nom: "MARC",
-            title: " Nettoyage de bateaux, JUAN-LES-PINS",
-            Description: "« Le nettoyage intérieur de notre bateau par Fidèle et Karine a été exceptionnel. Ils ont pris en charge chaque aspect avec un professionnalisme et une attention aux détails que nous n'avions jamais vus auparavant. Absolument brillant! »"
+            nom: "Thibaut",
+            title: " Nettoyage de Conciergerie, JUAN-LES-PINS",
+            Description: "« En tant que propriétaire d'un bien immobilier je tennais à partager mon entière satisfaction concernnanyt lesservices de conciergeries fournis par Grace Azur Services »"
         }
 
     ],
     SectionEngagement: [{
         link: "/a-propos?#engagement",
         urlImage: "/icon/quality.png",
-        title: "qualité",
+        title: "Qualité",
         Description: "Services de nettoyage d'une qualité exceptionnelle pour créer des espaces impeccables.",
     },
     {
         link: "/a-propos?#engagement",
         urlImage: "/icon/flexibility.png",
-        title: "flexibilité",
+        title: "Flexibilité",
         Description: "Services adaptés à vos besoins, offrant une flexibilité totale pour des nettoyages réguliers ou occasionnels."
     },
     {
         link: "/a-propos?#engagement",
         urlImage: "/icon/personalisation.png",
-        title: "personnalisation",
+        title: "Personnalisation",
         Description: "Chaque espace est unique, et nous personnalisons nos services pour répondre à vos attentes.",
     },
     {
         link: "/a-propos?#engagement",
         urlImage: "/icon/professionalism.png",
-        title: "professionalisme",
+        title: "Professionalisme",
         Description: "Équipe dévouée, professionnelle et compétente pour garantir votre satisfaction."
     }
         , {
         link: "/a-propos?#engagement",
         urlImage: "/icon/transparence.png",
-        title: "transparence",
+        title: "Transparence",
         Description: "Transparence dans nos relations avec les clients : informations claires sur nos services et tarifs."
     },
     {
         link: "/a-propos?#engagement",
         urlImage: "/icon/satisfaction.png",
-        title: "satisfaction",
+        title: "Satisfaction",
         Description: "Votre satisfaction est notre priorité. Nous travaillerons pour assurer votre contentement."
     }
     ],

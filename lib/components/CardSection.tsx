@@ -24,7 +24,7 @@ const CardSection = ({ title, urlImage, description, link }: CardSectionProps) =
             <div title={title} className={`flex flex-col flex-grow bg-[${BUTTON_COLOR}]/90 gap-y-2 rounded-xl shadow cursor-pointer hover:md:scale-110 transition-all duration-300 `}>
                 {/* <h2 className=" text-3xl font-bold ">{title}</h2> */}
                 <div className="flex flex-col md:flex-row   w-full flex-grow  ">
-                    <Image className="flex w-full  rounded-b-[0px] rounded-t-[4px] md:w-2/3  md:rounded-r-[0px] md:rounded-l-[8px]" src={urlImage} height={300} width={300} alt={""} />
+                    <Image className="flex w-full  rounded-b-[0px] rounded-t-[4px] md:w-2/3 md:bg- md:  md:rounded-r-[0px] md:rounded-l-[8px]" src={urlImage} height={300} width={300} alt={""} />
                     <div className="flex flex-col  md:w-full px-2 py-2 flex-grow  ">
                         <h3 className="text-2xl px-2.5 font-bold text-black" >{title}</h3>  
                         <div className="flex w-full flex-grow  text-base text-justify md:text-xl md:font-medium  py-2.5 px-2.5 ">

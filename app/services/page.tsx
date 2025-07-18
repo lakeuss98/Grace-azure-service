@@ -18,7 +18,33 @@ export const metadata: Metadata = {
     "Grace Azure Services"
   ]
 };
+const description2 = <div>
+<p> Grace Azur services est votre service de nettoyage de maisons de confiance à Antibes et ses environs. Nous savons que votre maison est bien plus qu'un simple espace : c'est votre sanctuaire, l'endroit où les souvenirs se créent et où le confort règne. C'est pourquoi nous nous engageons à vous offrir une propreté inégalée, vous permettant de profiter pleinement de votre foyer sans le souci des tâches ménagères.Que vous ayez besoin d'un nettoyage régulier, d'un grand ménage de printemps, ou d'une intervention spécifique après un événement, notre équipe de professionnels qualifiés est là pour répondre à tous vos besoins. Nous traitons chaque maison avec le plus grand soin, comme si c'était la nôtre.
+</p>
+<h3>Nos services de nettoyage de maison</h3>
+<p>Nous proposons une gamme complète de services pour que chaque recoin de votre maison brille de propreté :
+</p>
+<ul className="list-disc list-inside" >
+    <li>Nettoyage complet des pièces à vivre (salons, salles à manger) : dépoussiérage, aspiration, lavage des sols, nettoyage des surfaces.
+    </li>
+    <li>Assainissement des cuisines : nettoyage des plans de travail, éviers, cuisinières, micro-ondes, et extérieur des appareils électroménagers.
+    </li>
+    <li>Désinfection des salles de bain : toilettes, douches, baignoires, lavabos et miroirs impeccables.
+    </li>
+    <li>Nettoyage des chambres : dépoussiérage, aspiration, et mise en ordre.
+    </li>
+    <li>Nettoyage des vitres et miroirs pour une luminosité optimale.
+    </li>
+</ul>
+<p>
+Services spécialisés : nettoyage après construction ou rénovation, nettoyage avant ou après déménagement.
+Gestion des déchets : vidage et nettoyage des poubelles.Prêt pour une maison étincelante ?
+N'attendez plus pour retrouver le plaisir d'une maison parfaitement propre et accueillante. Contactez-nous dès aujourd'hui pour obtenir votre devis gratuit et personnalisé !
+  
+</p>
+              
 
+</div>
 export default function Services() {
     return (
         <section  title="services grace azur" className="flex flex-col w-full bg-[#fff] items-center px-4 py-10">
@@ -28,7 +54,7 @@ export default function Services() {
             </p>
             <div className="flex space-y-6  md:px-[15%] px-[3%] flex-col gap-4 py-6 w-full ">
                 {
-                    ContentFomePage.SectionServicesDetails.map((item, index) => (<CardService key={index} title={item.title} urlImage={item.imgsrc} description={item.description} />))
+                    ContentFomePage.SectionServicesDetails.map((item, index) => (<CardService key={index} title={item.title} urlImage={item.imgsrc} description={description2} />))
                 }
 
                 {/* <CardService title={"Conciergerie Airbnb"} urlImage={"/img/about.png"} description={"Nettoyage de votre location courte durée , gestion du linge et mise à disposition des produits de première nécessité."} link={""}/>

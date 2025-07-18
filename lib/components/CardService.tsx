@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { ReactNode } from "react";
 
 export type CardServiceProps = {
     title:string,
     urlImage:string,
-    description:string,
+    description:string|ReactNode,
    // link:string
 }
 

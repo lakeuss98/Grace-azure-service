@@ -3,7 +3,7 @@ import CardSection from "@/lib/components/CardSection";
 import Image from "next/image";
 import { ContentFomePage } from "@/lib/database"
 import { SECONDARY_COLOR } from "@/lib/const/menuList";
-import logoTitle from "@/public/icon/logoTitle.png"
+import logoTitle from "@/public/icon/LogoHome.png"
 import { Carousel, CarouselApi, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
@@ -37,9 +37,10 @@ export default function Home() {
     return (
         <div>
 
-            <div className="flex flex-col justify-around gap-y-0 md:gap-y-0 md:space-y-0 pt-[50px] md:pt-[70px]  h-[70vh] items-center bg-[url('/img/mob.png')]  lg:bg-[url('/img/bg-home.png')] bg-cover bg-center lg:bg-cover lg:bg-center w-full font-[family-name:var(--font-geist-sans)]">
-                <Image className="w-[263px] h-[149px] flex md:w-[400px] md:h-[227px] " src={logoTitle} alt="bg-home" width={300} height={300} />
-                <motion.div
+            <div className={`flex flex-col justify-around gap-y-0 md:gap-y-0 md:space-y-0 pt-[120px] md:pt-[110px]   h-[75vh] items-center bg-[url('/images/MainImg.jpg')]  lg:bg-[url('/images/Acceuil.jpg')] bg-cover bg-right lg:bg lg:bg w-full font-[family-name:var(--font-geist-sans)]`}>
+                <Image className="w-[263px] h-[149px] flex md:w-[460px]  md:h-[262px] " src={logoTitle} alt="bg-home" width={300} height={300} />
+                
+                {/* <motion.div
                 ref={ref}
                     initial={{ x: -200, opacity: 0 }}
                     animate={inView?{ x: 0, opacity: 1 }:{}}
@@ -47,7 +48,8 @@ export default function Home() {
                     className="flex text-base font-normal md:text-lg md:font-medium font-dancing text-center"
                 >
                     Votre partenaire pour un intérieur lumineux!
-                </motion.div>
+                </motion.div> */}
+
                 <motion.p
                 ref={refSubtitle}
                     initial={{ x: +200, opacity: 0 }}
@@ -65,7 +67,7 @@ export default function Home() {
                 <div className="flex py-3 w-full justify-center items-center px-6 ">
                     <motion.a
                     ref={refButtonDevis}
-                    initial={{ x: +400, opacity: 0 }}
+                    initial={{ x: +100, opacity: 0 }}
                     animate={inViewButtonDevis?{ x: 0,y:0, opacity: 1 }:{}}
                     transition={{ duration: 0.8, ease: 'easeInOut',type:"spring" }}
                     href={'/devis'} className={`flex cursor-pointer text-white py-4 bg-[${SECONDARY_COLOR}] w-full md:w-[30%] font-medium md:font-bold  rounded-lg justify-center items-center `} >{'Demander un devis'}</motion.a>
@@ -146,7 +148,7 @@ export default function Home() {
 
             {/* Localisation */}
             <section id="localisation" title="localisation" className="px-4 sm:px-20  md:px-[15%] py-12">
-                <h2 className="text-3xl py-4 flex justify-center md:text-4xl font-bold">Notre localisation</h2>
+                <h2 className="text-3xl py-4 flex justify-center md:text-4xl font-bold">Zones d'intervention</h2>
                 <div className="grid md:grid-cols-2 gap-x-8 items-start">
                     {/* Texte */}
                     <div className="flex  flex-col" >
@@ -154,7 +156,7 @@ export default function Home() {
                         <br />
 
                         <p className="text-justify py-3 " >
-                            Azur Sisters Services est fier d'offrir ses services dans une sélection de localités privilégiées, répondant aux besoins de nos clients avec la même qualité et le même engagement partout où nous intervenons. Nos zones d'intervention incluent :
+                            Grace Azur Services est fier d'offrir ses services dans une sélection de localités privilégiées, répondant aux besoins de nos clients avec la même qualité et le même engagement partout où nous intervenons. Nos zones d'intervention incluent :
 
                         </p>
                         <br />
@@ -186,7 +188,7 @@ export default function Home() {
             </section>
             {/* QUELQUES AVIS CLIENTS */}
             <section title="Avis" className="flex flex-col px-4  md:px-[15%]   py-12" >
-                <h2 className=" text-2xl md:pb-[75px]  flex justify-center md:text-4xl py-4 font-bold">QUELQUES AVIS CLIENTS</h2>
+                <h2 className=" text-2xl md:pb-[75px]  flex justify-center md:text-4xl py-4 font-bold">Quelques avis clients</h2>
 
                 <Carousel setApi={setApi} className=" bg-transparent " opts={{
                     align: "start",
@@ -206,8 +208,8 @@ export default function Home() {
                             ))
                         }
                     </CarouselContent>
-                    <CarouselPrevious className="" />
-                    <CarouselNext />
+                    <CarouselPrevious className="absolute left-2 top-1/2 " />
+                    <CarouselNext className="absolute right-2 top-1/2 " />
                 </Carousel>
                 <div className="  flex justify-center md:pt-9 text-muted-foreground py-2 text-center text-sm">
                     Slide {current} of {ContentFomePage.ListAvis.length}

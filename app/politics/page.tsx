@@ -168,9 +168,9 @@ export default function PolitiqueConfidentialite() {
                         </p>
                         <div className="bg-gray-50 p-4 rounded-lg">
                             <p className="text-gray-700">
-                                <strong>Email :</strong> contact@graceazurservices.com<br />
-                                <strong>Téléphone :</strong> +237 XXX XXX XXX<br />
-                                <strong>Adresse :</strong> Yaoundé, Cameroun
+                                <strong>Email :</strong> graceazurservices@gmail.com<br />
+                                <strong>Téléphone :</strong> 0 765 169 106<br />
+                                <strong>Adresse :</strong> Cote d'azur, France
                             </p>
                         </div>
                     </section>

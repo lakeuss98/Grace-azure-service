@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function MentionsLegales() {
     return (
-        <div className="min-h-screen bg-gray-50">
+        <div className=" bg-gray-50">
             {/* Header */}
             <div className="bg-white shadow-sm">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -40,9 +40,9 @@ export default function MentionsLegales() {
                         <div className="bg-gray-50 p-4 rounded-lg">
                             <p className="text-gray-700">
                                 <strong>Raison sociale :</strong> Grace Azur Services<br />
-                                <strong>Adresse :</strong> Yaoundé, Cameroun<br />
-                                <strong>Téléphone :</strong> +237 XXX XXX XXX<br />
-                                <strong>Email :</strong> contact@graceazurservices.com<br />
+                                <strong>Adresse :</strong> Cote d'azur, France<br />
+                                <strong>Téléphone :</strong> 0 765 169 106<br />
+                                <strong>Email :</strong> graceazurservices@gmail.com<br />
                                 <strong>Activité :</strong> Services de ménage à domicile et conciergerie
                             </p>
                         </div>
@@ -66,7 +66,7 @@ export default function MentionsLegales() {
                             3. Propriété Intellectuelle
                         </h2>
                         <p className="text-gray-700 leading-relaxed mb-4">
-                            L&apos;ensemble de ce site relève de la législation camerounaise et 
+                            L&apos;ensemble de ce site relève de la législation Francaise et 
                             internationale sur le droit d&apos;auteur et la propriété intellectuelle. 
                             Tous les droits de reproduction sont réservés.
                         </p>
@@ -161,8 +161,8 @@ export default function MentionsLegales() {
                         </p>
                         <div className="bg-gray-50 p-4 rounded-lg">
                             <p className="text-gray-700">
-                                <strong>Email :</strong> legal@graceazurservices.com<br />
-                                <strong>Adresse :</strong> Yaoundé, Cameroun<br />
+                                <strong>Email :</strong> graceazurservices@gmail.com<br />
+                                <strong>Adresse :</strong> Cote d'azur, France<br />
                                 <strong>Horaires :</strong> Du lundi au vendredi, 8h-18h
                             </p>
                         </div>

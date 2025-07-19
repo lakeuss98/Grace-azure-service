@@ -48,7 +48,8 @@ N'attendez plus pour retrouver le plaisir d'une maison parfaitement propre et ac
 export default function Services() {
     return (
         <section  title="services grace azur" className="flex flex-col w-full bg-[#fff] items-center px-4 py-10">
-            <h1 className="text-4xl font-bold mb-6 text-center text-[#4B2E05]">Nos Services</h1>
+            <h2 className=" text-2xl md:pb-[75px]  flex justify-center md:text-4xl py-4 font-bold uppercase ">Nos Services</h2>
+
             <p className="max-w-2xl text-center mb-10 text-[#4B2E05]">
                 Grace Azur Services vous propose des prestations professionnelles et personnalisées pour particuliers et propriétaires de locations saisonnières. Découvrez nos offres principales ci-dessous.
             </p>

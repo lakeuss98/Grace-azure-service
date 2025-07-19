@@ -55,8 +55,6 @@ export default function Home() {
                     initial={{ x: +200, opacity: 0 }}
                     animate={inViewSubtitle?{ x: 0,scale:1, opacity: 1 }:{}}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-
-            
                     className="text-center flex md:w-[30%] w-[70%]  md:text-2xl text-lg font-bold  md:font-bold md:py-6 py-8 " 
                 >
                     Découvrez le plaisir d'un intérieur impeccable avec Grace Azur Services : Là où la propreté rime avec sérénité et éclat.

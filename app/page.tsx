@@ -36,18 +36,10 @@ export default function Home() {
     return (
         <div>
 
-            <div className={`flex flex-col justify-around gap-y-0 md:gap-y-0 md:space-y-0 py-[60px]  md:pt-[110px] h-[70vh] lg:h-[75vh] items-center bg-[url('/images/MainImg.jpg')]  lg:bg-[url('/images/Acceuil.jpg')] bg-cover bg-right lg:bg lg:bg w-full font-[family-name:var(--font-geist-sans)]`}>
+            <div className={`flex flex-col justify-around gap-y-0 md:gap-y-0 md:space-y-0 pb-[30px] pt-[20px]  md:pt-[110px] h-[75vh] lg:h-[75vh] items-center bg-[url('/images/MainImg.jpg')]  lg:bg-[url('/images/Acceuil.jpg')] bg-cover bg-right lg:bg lg:bg w-full font-[family-name:var(--font-geist-sans)]`}>
                 <Image className="w-[263px] h-[149px] flex md:w-[460px]  md:h-[262px] " src={logoTitle} alt="bg-home" width={300} height={300} />
                 
-                {/* <motion.div
-                ref={ref}
-                    initial={{ x: -200, opacity: 0 }}
-                    animate={inView?{ x: 0, opacity: 1 }:{}}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="flex text-base font-normal md:text-lg md:font-medium font-dancing text-center"
-                >
-                    Votre partenaire pour un intérieur lumineux!
-                </motion.div> */}
+            
 
                 <motion.p
                 ref={refSubtitle}

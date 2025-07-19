@@ -36,27 +36,25 @@ export default function Home() {
     return (
         <div>
 
-            <div className={`flex flex-col justify-around gap-y-0 md:gap-y-0 md:space-y-0 pb-[30px] pt-[20px]  md:pt-[110px] h-[75vh] lg:h-[75vh] items-center bg-[url('/images/MainImg.jpg')]  lg:bg-[url('/images/Acceuil.jpg')] bg-cover bg-right lg:bg lg:bg w-full font-[family-name:var(--font-geist-sans)]`}>
-                <Image className="w-[263px] h-[149px] flex md:w-[460px]  md:h-[262px] " src={logoTitle} alt="bg-home" width={300} height={300} />
+            <div className={`flex flex-col pt-[100px] space-y-2 pb-2 md:justify-around md:gap-y-0 md:space-y-0  justify-end  md:pt-[110px] h-[75vh] lg:h-[75vh] items-center bg-[url('/images/MainImg.jpg')]  lg:bg-[url('/images/Acceuil.jpg')] bg-cover bg-right lg:bg lg:bg w-full font-[family-name:var(--font-geist-sans)]`}>
+                <Image className="w-[230px] h-[131px] flex md:w-[460px]  md:h-[262px] " src={logoTitle}  alt="bg-home" width={300} height={300} />
                 
-            
-
                 <motion.p
                 ref={refSubtitle}
-                    initial={{ x: +200, opacity: 0 }}
+                    initial={{ x: +20, opacity: 0 }}
                     animate={inViewSubtitle?{ x: 0,scale:1, opacity: 1 }:{}}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    className="text-center flex md:w-[30%] w-[70%]  md:text-2xl text-lg font-bold  md:font-bold md:py-6 py-8 " 
+                    className="text-center flex md:w-[30%] w-[70%]  md:text-2xl text-lg  md:font-bold md:py-6 " 
                 >
                     Découvrez le plaisir d'un intérieur impeccable avec Grace Azur Services : Là où la propreté rime avec sérénité et éclat.
                     </motion.p>
                 {/* <p 
                 className="text-center flex md:w-[30%] w-[70%]  md:text-2xl text-lg font-bold  md:font-bold md:py-6 py-8 " >
                 </p> */}
-                <div className="flex py-3 w-full justify-center items-center px-6 ">
+                <div className="flex w-full justify-center items-center px-6 ">
                     <motion.a
                     ref={refButtonDevis}
-                    initial={{ x: +100, opacity: 0 }}
+                    initial={{ x: +20, opacity: 0 }}
                     animate={inViewButtonDevis?{ x: 0,y:0, opacity: 1 }:{}}
                     transition={{ duration: 0.8, ease: 'easeInOut',type:"spring" }}
                     href={'/devis'} className={`flex cursor-pointer text-white py-4 bg-[${SECONDARY_COLOR}] w-full md:w-[30%] font-medium md:font-bold  rounded-lg justify-center items-center `} >{'Demander un devis'}</motion.a>
@@ -81,16 +79,16 @@ export default function Home() {
                     <div className="flex w-full md:hidden  justify-center py-5 ">
                         <div className="border-black  border w-[60%]   " />
 
-                    </div>                    <span className="flex justify-center text-center md:text-[16px] md:items-center font-semibold" >Disponibilité les soirs et les week-ends  </span>
-                    <div className="md:col-span-4 col-span-1 md:px-[40%] md:py-2 py-2  ">
+                    </div>                    <span className="flex justify-center text-center md:text-[16px] gap-x-8 font-semibold" >Disponibilité les soirs et les week-ends  </span>
+                    {/* <div className="md:col-span-4 col-span-1 md:px-[40%] md:py-2 py-2  ">
                         <motion.a
                         ref={refButton}
-                        initial={{ x: +200, opacity: 0,scale:0.8 }}
+                        initial={{ x: +20, opacity: 0,scale:0.8 }}
                         animate={inViewButton?{ x: 0,scale:1, opacity: 1 }:{}}
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         href={'/a-propos'} className={` bg-[#db5050] flex rounded-xl py-4 text-white font-bold justify-center items-center px-2.5 hover:underline`}>En savoir plus →</motion.a>
 
-                    </div>
+                    </div> */}
 
                 </div>
 
@@ -99,15 +97,6 @@ export default function Home() {
             {/* nos services */}
             <section title="Nos services" id="service" className="px-4 sm:px-20 md:px-[15%] py-12">
                 <div className="flex text-3xl md:text-4xl font-bold justify-center  py-5 w-full col-span-2 ">Nos services</div>
-
-                {/* <div className="flex gap-x-[100px]">
-                    <CardSection title={ContentFomePage.SectionService.conciergerie.title} urlImage={ContentFomePage.SectionService.conciergerie.urlImage} description={ContentFomePage.SectionService.conciergerie.Description} link={ContentFomePage.SectionService.conciergerie.link} />
-                    <CardSection title={ContentFomePage.SectionService.appartement.title} urlImage={ContentFomePage.SectionService.appartement.urlImage} description={ContentFomePage.SectionService.appartement.Description} link={ContentFomePage.SectionService.appartement.link} />
-                </div>
-
-                <div className="flex justify-center ">
-                <CardSection title={ContentFomePage.SectionService.domicile.title} urlImage={ContentFomePage.SectionService.domicile.urlImage} description={ContentFomePage.SectionService.domicile.Description} link={ContentFomePage.SectionService.domicile.link} />
-                </div> */}
 
                 <div className="grid  gap-x-[100px] gap-y-[50px] justify-items-center   place-items-center  grid-cols-1 md:grid-cols-2 ">
                     
@@ -184,13 +173,13 @@ export default function Home() {
                     loop: true,
                     // slidesToScroll: 1,
                 }}  >
-                    <CarouselContent className=" flex" >
+                    <CarouselContent className=" flex h-[100%] " >
                         {
                             ContentFomePage.ListAvis.map((avis, index) => (
                                 <CarouselItem key={index} className="flex justify-center cursor-pointer pl-1 basis md:basis-1/2 md:hover:scale-105  ">
                                     <div key={index + avis.nom} className="flex flex-col px-8 items-center gap-y-4 ">
-                                        <h1 className="text-2xl  md:font-bold">{avis.nom}</h1>
-                                        <span className="text-lg font-medium md:text-xl md:font-bold">{avis.title}</span>
+                                        <h1 className="text-2xl flex justify-center text-center w-full  md:font-bold">{avis.nom}</h1>
+                                        <span className="text-lg flex justify-center text-center font-medium md:text-xl md:font-bold">{avis.title}</span>
                                         <p className=" text-base md:text-xl  text-center justify-center flex-wrap ">{avis.Description}</p>
                                     </div>
                                 </CarouselItem>
@@ -201,7 +190,7 @@ export default function Home() {
                     <CarouselNext className="absolute right-2 top-1/2 " />
                 </Carousel>
                 <div className="  flex justify-center md:pt-9 text-muted-foreground py-2 text-center text-sm">
-                    Slide {current} of {ContentFomePage.ListAvis.length}
+                     {current} sur {ContentFomePage.ListAvis.length}
                 </div>
 
             </section>

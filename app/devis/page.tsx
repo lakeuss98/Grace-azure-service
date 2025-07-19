@@ -149,7 +149,7 @@ export default function Devis() {
                         {'Demander un devis'} {loading && <ClipLoader loading={loading} color="white" size={25} />}
                     </motion.button>
                 </div>
-                <div onClick={ ()=> console.log(selectedServices)} className="flex py-4 px-5 justify-center items-center ">test</div>
+                {/* <div onClick={ ()=> console.log(selectedServices)} className="flex py-4 px-5 justify-center items-center ">test</div> */}
             </form>
         </section>
     );

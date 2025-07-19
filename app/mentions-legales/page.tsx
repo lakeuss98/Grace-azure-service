@@ -9,7 +9,7 @@ export const metadata: Metadata = {
         "conditions d'utilisation",
         "informations légales",
         "Grace Azur Services",
-        "droit camerounais",
+        "droit Français",
     ],
 };
 
@@ -40,7 +40,7 @@ export default function MentionsLegales() {
                         <div className="bg-gray-50 p-4 rounded-lg">
                             <p className="text-gray-700">
                                 <strong>Raison sociale :</strong> Grace Azur Services<br />
-                                <strong>Adresse :</strong> Cote d'azur, France<br />
+                                <strong>Adresse :</strong> Côte d'azur, France<br />
                                 <strong>Téléphone :</strong> 0 765 169 106<br />
                                 <strong>Email :</strong> graceazurservices@gmail.com<br />
                                 <strong>Activité :</strong> Services de ménage à domicile et conciergerie
@@ -162,7 +162,7 @@ export default function MentionsLegales() {
                         <div className="bg-gray-50 p-4 rounded-lg">
                             <p className="text-gray-700">
                                 <strong>Email :</strong> graceazurservices@gmail.com<br />
-                                <strong>Adresse :</strong> Cote d'azur, France<br />
+                                <strong>Adresse :</strong> Côte d'azur, France<br />
                                 <strong>Horaires :</strong> Du lundi au vendredi, 8h-18h
                             </p>
                         </div>

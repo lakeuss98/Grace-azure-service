@@ -62,35 +62,19 @@ export default function Footer() {
               <a href="/contact" className="hover:underline">Contact</a>
             </li> */}
             <li>
-              <span>Horaires : Lun-Ven 9h-18h</span>
+              <span>Jours : 7 jours / 7</span>
             </li>
             <li>
-              <span>Tél : 01 23 45 67 89</span>
+              <span>Horaires : 8h - 18h</span>
             </li>
             <li>
-              <span>Email : contact@votresite.com</span>
+              <span>Tél : 0 765 169 106</span>
+            </li>
+            <li>
+              <span>Email : graceazurservices@gmail.com</span>
             </li>
           </ul>
         </div>
-
-        {/* Colonne 4 : localisation */}
-        {/* <div>
-          <h2 className="font-semibold text-2xl mb-4">Contactez-nous</h2>
-          <ul className="space-y-4 text-sm">
-            <li>
-              <a href="/contact" className="hover:underline">Contact</a>
-            </li>
-            <li>
-              <span>Horaires : Lun-Ven 9h-18h</span>
-            </li>
-            <li>
-              <span>Tél : 01 23 45 67 89</span>
-            </li>
-            <li>
-              <span>Email : contact@votresite.com</span>
-            </li>
-          </ul>
-        </div> */}
 
 
       </div>

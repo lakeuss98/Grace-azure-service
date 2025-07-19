@@ -13,12 +13,10 @@ export default function PhoneButton() {
         initial={{x:+40, y: +80, opacity: 0 }}
         animate={inViewButton?{ x: 0,y:0, opacity: 1 }:{}}
         transition={{ duration: 0.8, ease: 'easeInOut',type:"spring" }}
-        className={`bottom-[2vh] right-3 md:right-[14%] z-50 md:bottom-[118px]  rounded-full py-3 px-4 absolute flex gap-x-3 bg-[#db5050af] shadow-2xl drop-shadow-2xl text-[#2e6417] `}
+        className={`bottom-[2vh] right-3 md:right-[14%] z-50 md:bottom-[118px]  rounded-full py-3 px-4 absolute flex gap-x-3 bg-[#db5050] shadow-2xl drop-shadow-2xl text-[#000] `}
          > 
          <Phone/> 
-         <span className="font-bold" >0 7 65 16 91 06</span> 
-         
+         <span className="font" >0765169106</span> 
          </motion.a> 
-  
     )
 }

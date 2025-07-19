@@ -12,13 +12,13 @@ export default function pageTarifs() {
 
             <article title="nos tarif" className="flex gap-y-4 flex-col  w-full ">
                 <h2 className="text-2xl md:text-3xl font-bold text-black ">Nos Tarifs</h2>
-                <p className=" text-justify ">Chez Azur Sisters Services, nous comprenons que chaque client est unique, avec des besoins spécifiques qui méritent une attention personnalisée. C'est pourquoi nous avons adopté une approche sur mesure pour nos tarifications, garantissant que vous recevez exactement le service dont vous avez besoin, au meilleur prix possible.</p>
+                <p className=" text-justify ">Chez Grace Azur Services, nous comprenons que chaque client est unique, avec des besoins spécifiques qui méritent une attention personnalisée. C'est pourquoi nous avons adopté une approche sur mesure pour nos tarifications, garantissant que vous recevez exactement le service dont vous avez besoin, au meilleur prix possible.</p>
             </article>
 
             <article title="tarification" className="flex gap-y-4 flex-col w-full ">
                 <h2 className="text-2xl md:text-3xl font-bold text-text-black ">Une Tarification Transparente et Personnalisée</h2>
                 <p className=" text-justify ">
-                   {" Nous ne proposons pas de grille tarifaire fixe car nous croyons en l'importance d'adapter nos services à vos exigences particulières. Que ce soit pour le nettoyage résidentiel, la garde d'enfants, l'accompagnement des personnes âgées, ou le nettoyage de bateaux, nous prenons le temps de comprendre vos attentes pour vous fournir une estimation précise et juste."}               </p>
+                   {" Nous ne proposons pas de grille tarifaire fixe car nous croyons en l'importance d'adapter nos services à vos exigences particulières. Que ce soit pour le nettoyage d'appartement , de maison  ou pour la conciergerie Airbnb , nous prenons le temps de comprendre vos attentes pour vous fournir une estimation précise et juste."}</p>
             </article>
 
             <article title="Pourquoi nous contacer" className="flex gap-y-4 flex-col w-full ">
@@ -83,7 +83,7 @@ export default function pageTarifs() {
                 </ul>
 
                 <p className=" text-justify ">
-                    Chez Azur Sisters Services, nous sommes dédiés à offrir une expérience exceptionnelle, marquée par la qualité, le respect et l'attention aux détails. Votre satisfaction est notre priorité, et cela commence par une tarification juste et transparente. Remplissez notre formulaire de contact dès aujourd'hui pour découvrir comment nous pouvons enrichir votre quotidien avec nos services personnalisés.
+                    Chez Grace Azur  Services, nous sommes dédiés à offrir une expérience exceptionnelle, marquée par la qualité, le respect et l'attention aux détails. Votre satisfaction est notre priorité, et cela commence par une tarification juste et transparente. Remplissez notre formulaire de contact dès aujourd'hui pour découvrir comment nous pouvons enrichir votre quotidien avec nos services personnalisés.
                 </p>
             </article>
 

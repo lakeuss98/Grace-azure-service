@@ -170,7 +170,7 @@ export default function PolitiqueConfidentialite() {
                             <p className="text-gray-700">
                                 <strong>Email :</strong> graceazurservices@gmail.com<br />
                                 <strong>Téléphone :</strong> 0 765 169 106<br />
-                                <strong>Adresse :</strong> Cote d'azur, France
+                                <strong>Adresse :</strong> Côte d'azur, France
                             </p>
                         </div>
                     </section>

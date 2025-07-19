@@ -50,19 +50,13 @@ export default function Services() {
         <section  title="services grace azur" className="flex flex-col w-full bg-[#fff] items-center px-4 py-10">
             <h2 className=" text-2xl md:pb-[75px]  flex justify-center md:text-4xl py-4 font-bold uppercase ">Nos Services</h2>
 
-            <p className="max-w-2xl text-center mb-10 text-[#4B2E05]">
+            <p className="max-w-2xl md:text-xl text-center mb-10 text-black">
                 Grace Azur Services vous propose des prestations professionnelles et personnalisées pour particuliers et propriétaires de locations saisonnières. Découvrez nos offres principales ci-dessous.
             </p>
             <div className="flex space-y-6  md:px-[15%] px-[3%] flex-col gap-4 py-6 w-full ">
                 {
-                    ContentFomePage.SectionServicesDetails.map((item, index) => (<CardService key={index} title={item.title} urlImage={item.imgsrc} description={description2} />))
+                    ContentFomePage.SectionServicesDetails.map((item, index) => (<CardService key={index} title={item.title} urlImage={item.imgsrc} description={item.description} />))
                 }
-
-                {/* <CardService title={"Conciergerie Airbnb"} urlImage={"/img/about.png"} description={"Nettoyage de votre location courte durée , gestion du linge et mise à disposition des produits de première nécessité."} link={""}/>
-                <CardService title={"Nettoyage d'appartement"} urlImage={"/img/about.png"} description={"Entretien régulier ou ponctuel de votre appartement : sols, poussière, sanitaires, cuisine, vitres, et espaces communs. Adapté à vos besoins et à votre rythme."} link={""}/>
-                <CardService title={"Nettoyage de domicile"} urlImage={"/img/about.png"} description={"Service de ménage à domicile pour maisons et villas : nettoyage complet, repassage, lavage de vitres, entretien des pièces de vie et chambres."} link={""}/>
-                */}
-
             </div>
             {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-5xl">
                 <div className="bg-[#FCD5CE] rounded-lg shadow-md p-6 flex flex-col items-center">

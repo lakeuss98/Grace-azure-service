@@ -1,5 +1,5 @@
 "use client";
-import React, { FormEventHandler } from "react";
+import React from "react";
 import { useState } from "react";
 import { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY } from "@/lib/const/menuList";
 import emailjs from "@emailjs/browser";

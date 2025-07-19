@@ -44,8 +44,8 @@ export default function RootLayout({
       <body 
       className="flex flex-col h-screen bg-[#db5050]/5 "
       > 
-     <PhoneButton/>
-        <ToastContainer />
+      <PhoneButton/>
+      <ToastContainer />
       <NavBar />
       <div className="flex flex-col overflow-y-scroll  flex-grow ">
       {children}

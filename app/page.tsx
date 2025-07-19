@@ -9,7 +9,6 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Engagement from "@/lib/components/Engagement";
-import { Phone } from "lucide-react";
 
 
 export default function Home() {
@@ -37,7 +36,7 @@ export default function Home() {
     return (
         <div>
 
-            <div className={`flex flex-col justify-around gap-y-0 md:gap-y-0 md:space-y-0 pt-[120px] md:pt-[110px]   h-[75vh] items-center bg-[url('/images/MainImg.jpg')]  lg:bg-[url('/images/Acceuil.jpg')] bg-cover bg-right lg:bg lg:bg w-full font-[family-name:var(--font-geist-sans)]`}>
+            <div className={`flex flex-col justify-around gap-y-0 md:gap-y-0 md:space-y-0 py-[60px]  md:pt-[110px] h-[70vh] lg:h-[75vh] items-center bg-[url('/images/MainImg.jpg')]  lg:bg-[url('/images/Acceuil.jpg')] bg-cover bg-right lg:bg lg:bg w-full font-[family-name:var(--font-geist-sans)]`}>
                 <Image className="w-[263px] h-[149px] flex md:w-[460px]  md:h-[262px] " src={logoTitle} alt="bg-home" width={300} height={300} />
                 
                 {/* <motion.div
@@ -74,7 +73,7 @@ export default function Home() {
             </div>
 
             {/* Pourquoi nous ? */}
-            <section title="Pourquoi nous ?" className="px-4 sm:px-20 md:px-[15%] py-12  ">
+            <section title="Pourquoi nous ?" className="px-4 sm:px-20 md:px-[15%] py-9   ">
                 <div className="flex text-3xl md:text-4xl font-bold justify-center  py-4 w-full col-span-2 ">Pourquoi nous ?</div>
                 <div className="grid grid-cols-1 gap-y-2 md:gap-y-0 md:grid-cols-4 py-4 px-2 md:px-0 shadow md:pt-10 items-center bg-amber-100 rounded-lg  ">
                     <span className="flex text-center gap-x-8  justify-center md:text-[16px] font-semibold" >Nettoyage professionnel et certifié <div className="border-black md:h-9 md:w-0 md:border-2  " />  </span>

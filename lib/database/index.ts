@@ -27,44 +27,60 @@ export const ContentFomePage = {
         {
             imgsrc: "/images/Services/Appart2.jpg",
             title: "Un appartement frais et propre ",
-            description:
-                ` Chez Grace Azur Services,
-nous comprenons que votre temps est précieux et que maintenir un espace de vie propre et sain peut parfois devenir une tâche ardue.
-C'est là que nous intervenons ! 
-Notre équipe de professionnels qualifiés et expérimentés est dédiée à vous offrir un service de nettoyage d'appartements de haute qualité, adapté à vos besoins spécifiques. Que vous soyez un particulier débordé, un professionnel en déplacement constant ou un propriétaire 
-souhaitant préparer un bien pour la location, nous avons la solution de nettoyage qu'il vous faut.  
-Nous utilisons des produits de nettoyage efficaces et respectueux de l'environnement,
-ainsi que des techniques approuvées pour garantir un résultat impeccable. Fini la poussière, les taches tenaces et le désordre : laissez-nous transformer votre appartement en un havre de paix propre et accueillant. \n
-Contactez-nous dès aujourd'hui pour un devis gratuit et personnalisé!
-`,
+            description:`
+            Notre équipe de professionnels qualifiés et expérimentés est dédiée à vous offrir un service de nettoyage d'appartements de haute qualité, adapté à vos besoins spécifiques. Que vous soyez un particulier débordé, un professionnel en déplacement constant ou un propriétaire souhaitant préparer un bien pour la location, nous avons la solution de nettoyage qu'il vous faut.
+Nous utilisons des produits de nettoyage efficaces et respectueux de l'environnement, ainsi que des techniques éprouvées pour garantir un résultat impeccable. Fini la poussière, les taches tenaces et le désordre : laissez-nous transformer votre appartement en un havre de paix propre et accueillant. Contactez-nous dès aujourd'hui pour un devis gratuit et personnalisé.`
+   
+
+//                 ` Chez Grace Azur Services,
+// nous comprenons que votre temps est précieux et que maintenir un espace de vie propre et sain peut parfois devenir une tâche ardue.
+// C'est là que nous intervenons ! 
+// Notre équipe de professionnels qualifiés et expérimentés est dédiée à vous offrir un service de nettoyage d'appartements de haute qualité, adapté à vos besoins spécifiques. Que vous soyez un particulier débordé, un professionnel en déplacement constant ou un propriétaire 
+// souhaitant préparer un bien pour la location, nous avons la solution de nettoyage qu'il vous faut.  
+// Nous utilisons des produits de nettoyage efficaces et respectueux de l'environnement,
+// ainsi que des techniques approuvées pour garantir un résultat impeccable. Fini la poussière, les taches tenaces et le désordre : laissez-nous transformer votre appartement en un havre de paix propre et accueillant. \n
+// Contactez-nous dès aujourd'hui pour un devis gratuit et personnalisé!
+//`
+,
         },
         {
             imgsrc: "/images/Services/Domicil2.jpg",
             title: "Votre maison, notre priorité.",
-            description:
-                ` 
-Chez Grace Azur Services , nous savons que votre maison est bien plus qu'un simple espace : c'est votre sanctuaire, l'endroit où les souvenirs se créent et où le confort règne.
- C'est pourquoi nous nous engageons à vous offrir une propreté inégalée, vous permettant de profiter pleinement de votre foyer sans le souci des tâches ménagères.  
- Que vous ayez besoin d'un nettoyage régulier, d'un grand ménage de printemps, ou d'une intervention spécifique après un événement, notre équipe de professionnels qualifiés est là pour répondre à tous vos besoins. 
- Nous traitons chaque maison avec le plus grand soin, comme si c'était la nôtre.
+            description:         
+            `
+             Chez Grace Azur services, nous nous engageons à vous offrir une propreté inégalée, vous permettant de profiter pleinement de votre foyer sans le souci des tâches ménagères.
+Que vous ayez besoin d'un nettoyage régulier, d'un grand ménage de printemps, ou d'une intervention spécifique après un événement, notre équipe de professionnels qualifiés est là pour répondre à tous vos besoins. Nous traitons chaque maison avec le plus grand soin, comme si c'était la nôtre.
+N'attendez plus pour retrouver le plaisir d'une maison parfaitement propre et accueillante. Contactez-nous dès aujourd'hui pour obtenir votre devis gratuit et personnalisé ,
+`
+
+//                 ` 
+// Chez Grace Azur Services , nous savons que votre maison est bien plus qu'un simple espace : c'est votre sanctuaire, l'endroit où les souvenirs se créent et où le confort règne.
+//  C'est pourquoi nous nous engageons à vous offrir une propreté inégalée, vous permettant de profiter pleinement de votre foyer sans le souci des tâches ménagères.  
+//  Que vous ayez besoin d'un nettoyage régulier, d'un grand ménage de printemps, ou d'une intervention spécifique après un événement, notre équipe de professionnels qualifiés est là pour répondre à tous vos besoins. 
+//  Nous traitons chaque maison avec le plus grand soin, comme si c'était la nôtre.
  
-N'attendez plus pour retrouver le plaisir d'une maison parfaitement propre et accueillante.
- Contactez-nous dès aujourd'hui pour obtenir votre devis gratuit et personnalisé !
-                `,
+// N'attendez plus pour retrouver le plaisir d'une maison parfaitement propre et accueillante.
+//  Contactez-nous dès aujourd'hui pour obtenir votre devis gratuit et personnalisé !
+//                 `,
+
         },
         {
             imgsrc: "/images/Services/Conciergerie2.jpg",
             title: "Service de conciergerie et nettoyage",
-            description:
-                ` 
-                Grace Azur Services est  votre partenaire de confiance pour une gestion simplifiée et optimisée de vos propriétés Airbnb à Antibes et ses environs. 
-                En tant que propriétaire, vous savez que la clé du succès réside dans l'excellence de l'expérience client. C'est exactement ce que notre service de conciergerie et de nettoyage dédié aux appartements Airbnb vous offre !
-Nos services de conciergerie et de nettoyage Airbnb
-Nous proposons une solution complète pour la gestion de votre propriété, 
-garantissant une expérience sans faille pour vous et vos locataires.
+            description:`Grace azur Services est votre partenaire de confiance pour une gestion simplifiée et optimisée de vos propriétés Airbnb à Antibes et ses environs.En tant que propriétaire, vous savez que la clé du succès réside dans l'excellence de l'expérience client. C'est exactement ce que notre service de conciergerie et de nettoyage dédié aux appartements Airbnb vous offre.
 Confiez le nettoyage de votre appartement Airbnb à Antibes à des experts.
- Contactez-nous dès aujourd'hui pour une consultation gratuite et un devis !
-                `,
+ Contactez-nous dès aujourd'hui pour une consultation gratuite et un devis.`
+
+//                 ` 
+//                 Grace Azur Services est  votre partenaire de confiance pour une gestion simplifiée et optimisée de vos propriétés Airbnb à Antibes et ses environs. 
+//                 En tant que propriétaire, vous savez que la clé du succès réside dans l'excellence de l'expérience client. C'est exactement ce que notre service de conciergerie et de nettoyage dédié aux appartements Airbnb vous offre !
+// Nos services de conciergerie et de nettoyage Airbnb
+// Nous proposons une solution complète pour la gestion de votre propriété, 
+// garantissant une expérience sans faille pour vous et vos locataires.
+// Confiez le nettoyage de votre appartement Airbnb à Antibes à des experts.
+//  Contactez-nous dès aujourd'hui pour une consultation gratuite et un devis !
+//                 `,
+
         },
 
     ]

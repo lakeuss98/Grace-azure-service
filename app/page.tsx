@@ -36,7 +36,7 @@ export default function Home() {
     return (
         <div>
 
-            <div className={`flex flex-col pt-[100px] space-y-2 pb-2 md:justify-around md:gap-y-0 md:space-y-0  justify-end  md:pt-[110px] h-[75vh] lg:h-[75vh] items-center bg-[url('/images/MainImg.jpg')]  lg:bg-[url('/images/Acceuil.jpg')] bg-cover bg-right lg:bg lg:bg w-full font-[family-name:var(--font-geist-sans)]`}>
+            <div className={`flex flex-col  space-y-2 pb-2 md:justify-around md:gap-y-0 md:space-y-0  justify-around  md:pt-[110px] h-[75vh] lg:h-[75vh] items-center bg-[url('/images/Acceuil/newmain.jpg')]  lg:bg-[url('/images/Acceuil.jpg')] bg-cover bg-right lg:bg lg:bg w-full font-[family-name:var(--font-geist-sans)]`}>
                 <Image className="w-[230px] h-[131px] flex md:w-[460px]  md:h-[262px] " src={logoTitle}  alt="bg-home" width={300} height={300} />
                 
                 <motion.p
@@ -176,7 +176,7 @@ export default function Home() {
                     <CarouselContent className=" flex h-[100%] " >
                         {
                             ContentFomePage.ListAvis.map((avis, index) => (
-                                <CarouselItem key={index} className="flex justify-center cursor-pointer pl-1 basis md:basis-1/2 md:hover:scale-105  ">
+                                <CarouselItem key={index} className="flex justify-center cursor-pointer pl-1 basis md:basis-1/2  ">
                                     <div key={index + avis.nom} className="flex flex-col px-8 items-center gap-y-4 ">
                                         <h1 className="text-2xl flex justify-center text-center w-full  md:font-bold">{avis.nom}</h1>
                                         <span className="text-lg flex justify-center text-center font-medium md:text-xl md:font-bold">{avis.title}</span>

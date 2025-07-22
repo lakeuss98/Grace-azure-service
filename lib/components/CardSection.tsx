@@ -27,7 +27,7 @@ const CardSection = ({ title, urlImage, description, link }: CardSectionProps) =
                     <Image className="flex w-full  rounded-b-[0px] rounded-t-[4px] md:w-2/3 md:bg- md:  md:rounded-r-[0px] md:rounded-l-[8px]" src={urlImage} height={300} width={300} alt={""} />
                     <div className="flex flex-col  md:w-full px-2 py-2 flex-grow  ">
                         <h3 className="text-2xl px-2.5 font-bold text-black" >{title}</h3>  
-                        <div className="flex w-full flex-grow  text-base text-justify md:text-xl md:font-medium  py-2.5 px-2.5 ">
+                        <div className="flex w-full flex-grow  text text-justify md:text-xl md:font-medium  py-2.5 px-2.5 ">
                             {description}
                         </div>
                         <a href={link} className={`bg-[${ACCENT_COLOR}] flex rounded-xl py-4 text-white font-bold justify-center items-center px-2.5 hover:underline`}>En savoir plus →</a>

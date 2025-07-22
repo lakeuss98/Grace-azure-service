@@ -1,3 +1,5 @@
+import { title } from "process"
+
 export const ContentFomePage = {
     SectionService: {
 
@@ -5,7 +7,7 @@ export const ContentFomePage = {
             link: "/services",
             urlImage: "/images/Acceuil/Appart.jpg",
             title: "Nettoyage d'appartement",
-            Description: "Entretien régulier ou ponctuel de votre appartement : sols, poussière, sanitaires, cuisine, vitres, et espaces communs. Adapté à vos besoins et à votre rythme."
+            Description: "Entretien régulier ou ponctuel de votre appartement: sols, poussière, sanitaires, cuisine, vitres, et espaces communs. Adapté à vos besoins et à votre rythme."
         },
         conciergerie: {
             link: "/services",
@@ -112,27 +114,52 @@ Confiez le nettoyage de votre appartement Airbnb à Antibes à des experts.
 
     },
     ListAvis: [
+        // {
+        //     nom: "LÉA & ANDRÉ",
+        //     title: "Nettoyage de villa, ANTIBES,",
+        //     Description: "« Après une longue recherche d'une équipe fiable pour notre villa à Antibes, nous avons finalement trouvé Grace Azur Services. Carine et son équipe ont été incroyables. Ils ont pris soin de chaque détail avec une grande attention. Nous ne pouvons que les recommander vivement ! »"
+        // },
+        // {
+        //     nom: "FRANCK",
+        //     title: " Nettoyage d'appartement , VALBONNE",
+        //     Description: "« Je suis extrêmement satisfait du service fourni par l’entreprise Grace azur services. Leur équipe est intervenue chez moi pour nettoyer  mon appartement, et je suis impressionné par la qualité du travail réalisé. Je recommande vivement L'entreprise Grace Azur services à tous ceux qui recherchent un service de nettoyage de haute qualité. Un grand merci à toute l'équipe pour leur excellent travail ! »"
+        // },
+        // {
+        //     nom: "CHRISTINE",
+        //     title: " Entretien de Copropriété, CANNES",
+        //     Description: "« En tant que syndic de copropriété à Cannes, trouver une équipe comme Grace Azur Services a été une véritable aubaine. Leur dévouement et leur travail méticuleux nous ont vraiment impressionnés. La copropriété n'a jamais été aussi bien entretenue »."
+        // },
+        // {
+        //     nom: "Thibaut",
+        //     title: " Nettoyage de Conciergerie, JUAN-LES-PINS",
+        //     Description: "«En tant que propriétaire d'un bien immobilier je tennais à partager mon entière satisfaction concernant les services de conciergerie fournis par Grace Azur Services»"
+        // },
         {
-            nom: "LÉA & ANDRÉ",
-            title: "Nettoyage de villa, ANTIBES,",
-            Description: "« Après une longue recherche d'une équipe fiable pour notre villa à Antibes, nous avons finalement trouvé Grace Azur Services. Carine et son équipe ont été incroyables. Ils ont pris soin de chaque détail avec une grande attention. Nous ne pouvons que les recommander vivement ! »"
+            nom:"Marc D hôte Airbnb à Antibes",
+            title:"⭐ Avis n°1– Professionnalisme et fiabilité(5/5)",
+            Description:"Service au top ! À chaque passage, mes appartements sont impeccables, ce qui me vaut de super commentaires de mes locataires Airbnb. L’équipe est fiable, flexible et très réactive, même en cas de réservation de dernière minute. Un vrai partenaire de confiance."
         },
         {
-            nom: "FRANCK",
-            title: " Nettoyage d'appartement , VALBONNE",
-            Description: "« Je suis extrêmement satisfait du service fourni par l’entreprise Grace azur services. Leur équipe est intervenue chez moi pour nettoyer  mon appartement, et je suis impressionné par la qualité du travail réalisé. Je recommande vivement L'entreprise Grace Azur services à tous ceux qui recherchent un service de nettoyage de haute qualité. Un grand merci à toute l'équipe pour leur excellent travail ! »"
+            nom:"Claire B., gestionnaire de locations antibes",
+            title:"⭐ Avis n°2– Excellent rapport qualité-prix (5/5)",
+            Description: "Je cherchais une entreprise sérieuse pour m’aider à gérer les turnovers de mes logements. Depuis que je travaille avec grace azur services, tout est plus simple. Les appartements sont toujours nickel, les draps bien lavés, et le tout à un prix très raisonnable."
         },
         {
-            nom: "CHRISTINE",
-            title: " Entretien de Copropriété, CANNES",
-            Description: "« En tant que syndic de copropriété à Cannes, trouver une équipe comme Grace Azur Services a été une véritable aubaine. Leur dévouement et leur travail méticuleux nous ont vraiment impressionnés. La copropriété n'a jamais été aussi bien entretenue »."
+            nom:"Sonia G. Cannes",
+            title:" ⭐ Avis n°3– Gain de temps pour les hôtes(5/5)",
+            Description:"Avant, je passais mes week-ends à nettoyer entre deux locataires. Maintenant, je peux souffler ! Tout est pris en charge : ménage, linge, même les petites attentions pour les voyageurs. Résultat : des avis 5 étoiles sur Airbnb."
+            
         },
         {
-            nom: "Thibaut",
-            title: " Nettoyage de Conciergerie, JUAN-LES-PINS",
-            Description: "«En tant que propriétaire d'un bien immobilier je tennais à partager mon entière satisfaction concernant les services de conciergerie fournis par Grace Azur Services»"
-        }
+            nom:"Hugo T. Biot",
+            title:"⭐ Avis n°4– Service réactif et flexible (5/5)",
+            Description:"J’ai souvent des réservations de dernière minute, et l’équipe arrive toujours à s’adapter. Très professionnels, toujours disponibles, et la qualité du ménage est constante. Rien à redire."
 
+            
+        },
+        
+        
+        
     ],
     SectionEngagement: [{
         link: "/a-propos?#engagement",

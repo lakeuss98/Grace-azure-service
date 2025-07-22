@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         "location courte durée",
         "Grace Azure Services"
     ],
-    icons:'/icon/logo.png',
+    icons:'/icon/LogoHome.png',
 };
 
 export default function RootLayout({

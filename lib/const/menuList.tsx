@@ -1,5 +1,5 @@
 export const menus = [
-    { title:'Acceuil',path:'/' },
+    { title:'Accueil',path:'/' },
     { title:'À propos',path:'/a-propos' },
     { title:'Nos services',path:'/services' },
     { title:'Tarifs',path:'/tarifs' },

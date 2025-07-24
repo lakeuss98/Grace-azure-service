@@ -152,23 +152,23 @@ Confiez le nettoyage de votre appartement Airbnb à Antibes à des experts.
         // },
         {
             nom:"Marc D hôte Airbnb à Antibes",
-            title:"⭐ Avis n°1– Professionnalisme et fiabilité(5/5)",
+            title:"⭐ Professionnalisme et fiabilité(5/5)",
             Description:"Service au top ! À chaque passage, mes appartements sont impeccables, ce qui me vaut de super commentaires de mes locataires Airbnb. L’équipe est fiable, flexible et très réactive, même en cas de réservation de dernière minute. Un vrai partenaire de confiance."
         },
         {
             nom:"Claire B., gestionnaire de locations antibes",
-            title:"⭐ Avis n°2– Excellent rapport qualité-prix (5/5)",
+            title:"⭐ Excellent rapport qualité-prix (5/5)",
             Description: "Je cherchais une entreprise sérieuse pour m’aider à gérer les turnovers de mes logements. Depuis que je travaille avec grace azur services, tout est plus simple. Les appartements sont toujours nickel, les draps bien lavés, et le tout à un prix très raisonnable."
         },
         {
             nom:"Sonia G. Cannes",
-            title:" ⭐ Avis n°3– Gain de temps pour les hôtes(5/5)",
+            title:" ⭐ Gain de temps pour les hôtes(5/5)",
             Description:"Avant, je passais mes week-ends à nettoyer entre deux locataires. Maintenant, je peux souffler ! Tout est pris en charge : ménage, linge, même les petites attentions pour les voyageurs. Résultat : des avis 5 étoiles sur Airbnb."
             
         },
         {
             nom:"Hugo T. Biot",
-            title:"⭐ Avis n°4– Service réactif et flexible (5/5)",
+            title:"⭐ Service réactif et flexible (5/5)",
             Description:"J’ai souvent des réservations de dernière minute, et l’équipe arrive toujours à s’adapter. Très professionnels, toujours disponibles, et la qualité du ménage est constante. Rien à redire."
 
             
